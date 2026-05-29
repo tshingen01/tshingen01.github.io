@@ -6,7 +6,7 @@ export function JsonLd() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Ujjwal Shukla",
+    name: "mark K. Rimando",
     alternateName: "NK",
     url: SITE_CONFIG.url,
     email: SITE_CONFIG.links.email,
@@ -15,7 +15,6 @@ export function JsonLd() {
     description: SITE_CONFIG.description,
     sameAs: [
       SITE_CONFIG.links.github,
-      SITE_CONFIG.links.linkedin,
     ],
     alumniOf: educationData.map(edu => ({
       "@type": "EducationalOrganization",

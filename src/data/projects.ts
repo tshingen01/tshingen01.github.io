@@ -14,6 +14,41 @@ export interface Project {
 export const projects: Project[] = [
   
   {
+    id: "shoptoli",
+    title: "Shoptoli WooCommerce Multivendor Store",
+    description:
+      "Shoptoli is a modern multivendor e-commerce marketplace rebuilt and optimized on WordPress + WooCommerce in 2026.",
+    longDescription:
+      "The project focused on improving performance, navigation, conversion optimization, and marketplace scalability.The development team redesigned the WooCommerce architecture using a custom WordPress theme implementation and multiple advanced WooCommerce extensions. The goal was to transform Shoptoli into a faster and more conversion-focused WooCommerce marketplace with Better product filtering, Improved mobile UX, Faster product browsing, Vendor marketplace functionality, and Optimized checkout flow. The project also addressed common WooCommerce issues such as plugin overload, navigation complexity, and slow product search.",
+    technologies: [
+      "WordPress",
+      "WooCommerce",
+      "Shop Mania",
+      "WCFM Multivendor",
+      "Advance Product Search Pro",
+      "PHP",
+      "Custom CSS",
+      "PHP",
+      "HTML5, JavaScript",
+    ],
+    features: [
+      "WooCommerce multivendor marketplace",
+      "Advanced AJAX product search",
+      "Product comparison system",
+      "Wishlist functionality",
+      "Product variation swatches",
+      "Optimized cart experience",
+      "Mobile-first responsive design",
+      "Vendor management",
+      "Conversion-focused UI",
+      "Performance optimization",
+      "Modern WooCommerce theme customization",
+    ],
+    image: "/images/projects/Shoptoli/shoptoli-6215.webp",
+    demoUrl: "https://shoptoli.in/",
+    category: "web"
+  },
+  {
     id: "qrph-crypto",
     title: "QRPh Crypto Payment Platform",
     description:
@@ -50,6 +85,41 @@ export const projects: Project[] = [
     category: "blockchain"
   },
   {
+    id: "poczta-kartkowa",
+    title: "Poczta Kartkowa WooCommerce Modernization",
+    description:
+      "Poczta Kartkowa is a personalized greeting-card e-commerce platform that underwent extensive modernization in 2026 using WordPress and WooCommerce.",
+    longDescription:
+      "The project focused on stabilizing an aging WooCommerce infrastructure while improving payment reliability, maintainability, and platform performance.",
+    technologies: [
+      "WordPress",
+      "WooCommerce",
+      "HTML5, CSS3, JavaScript",
+      "MySQL",
+      "PHP",
+      "React",
+      "WooCommerce Payment APIs",
+      "Caching + Query Optimization",
+      "Cloud Infrastructure",
+      "Shipping Integrations",
+    ],
+    features: [
+      "Personalized product ordering",
+      "WooCommerce checkout optimization",
+      "Payment gateway integrations",
+      "Shipping & delivery integrations",
+      "Legacy system refactoring",
+      "Admin workflow improvements",
+      "Responsive storefront",
+      "Order automation",
+      "Stability monitoring",
+      "Platform maintainability upgrades",
+    ],
+    image: "/images/projects/Poczta-Kartkowa/poczta-kartkowa_1.png",
+    demoUrl: "https://pocztakartkowa.pl/",
+    category: "web"
+  },
+  {
     id: "trading-Platform",
     title: "Coins Pro Advanced Trading Platform",
     description:
@@ -84,7 +154,7 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/trading/trading_1.jpg",
     demoUrl: "https://www.coins.ph/en-ph?utm_source",
-    githubUrl: "https://github.com/techieujjwal/portfolio",
+    githubUrl: "https://github.com/tshingen01/portfolio",
     category: "web"
   },
   {
@@ -117,7 +187,7 @@ export const projects: Project[] = [
       "Automated insights feed",
     ],
     image: "/images/projects/Market-intel/market_intel_1.jpg",
-    demoUrl: "https://community-dashboard-beige.vercel.app/",
+    demoUrl: "https://nmaroulis.github.io/sibyl/index.html",
     githubUrl: "https://github.com/tshingen01/market_intel_platform",
     category: "ai"
   },
@@ -155,7 +225,7 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/Sprout-HRIS-Payroll/sprout_hris_payroll_1.jpg",
     demoUrl: "https://www.sprout.ph/hris-payroll",
-    githubUrl: "https://github.com/techieujjwal/Student-result-analyzer",
+    githubUrl: "https://github.com/tshingen01/Student-result-analyzer",
     category: "web"
   },
   {
@@ -190,7 +260,147 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/Sprout-RP/sr_perform_1.jpg",
     demoUrl: "https://www.sprout.ph/recruitment-performance",
-    githubUrl: "https://github.com/techieujjwal/Student-result-analyzer",
+    githubUrl: "https://github.com/tshingen01/Student-result-analyzer",
     category: "web"
-  }
+  },
+  {
+    id: "banking-mobile-app",
+    title: "Digital Banking & Mobile Internet Banking Platform",
+    description:
+      "A modern digital banking platform developed for Philippine banks transitioning from legacy systems into cloud-ready online banking ecosystems.",
+    longDescription:
+      "The platform supported both desktop and mobile banking experiences with secure financial workflows and enterprise-grade scalability. It featured account management, fund transfers, bill payments, loan applications, and customer support tools. The architecture was designed to integrate with core banking systems while providing a seamless user experience across devices.",
+    technologies: [
+      "React.js",
+      "Express.js",
+      "Material UI",
+      "Zoom API",
+      "TypeScript",
+      "Redux",
+      "SCSS",
+      "WebSocket",
+      "Axios"
+    ],
+    features: [
+      "Customer Banking Portal",
+      "Mobile Internet Banking",
+      "Payment Integrations",
+      "Admin Dashboard",
+      "Customer Banking Portal",
+    ],
+    image: "/images/projects/Banking/banking_platform_1.jpg",
+    demoUrl: "https://exist.com/digital-banking-and-fintech",
+    githubUrl: "https://github.com/tshingen01/digital-banking-and-fintech",
+    category: "mobile"
+  },
+  {
+    id: "medical-mobile-web",
+    title: "Telemedicine & Electronic Medical Records Platform",
+    description:
+      "A cloud-based telemedicine and EMR platform developed for hospitals and clinics in the Philippines during the rapid digital healthcare adoption period caused by the pandemic.",
+    longDescription:
+      "The project focused on enabling remote healthcare workflows and centralized medical record access.The platform provided secure video consultations, patient record management, appointment scheduling, and prescription services. It was designed to integrate with existing healthcare systems while ensuring compliance with data privacy regulations and delivering a seamless user experience for both patients and healthcare providers.",
+    technologies: [
+      "Angular",
+      "TypeScript",
+      "RxJS",
+      "CSS3",
+      "Bootstrap",
+      "HTML5"
+    ],
+    features: [
+      "Patient Portal",
+      "Doctor Dashboard",
+      "Hospital Operations",
+      "Notifications",
+    ],
+    image: "/images/projects/Healthcare/healthcare_1.jpg",
+    demoUrl: "https://exist.com/healthcare",
+    githubUrl: "https://github.com/tshingen01/healthcare",
+    category: "mobile"
+  },
+  {
+    id: "enterprise-web-app",
+    title: "Enterprise Data Analytics & Executive Dashboard System",
+    description:
+      "The platform aggregated enterprise data from multiple systems into a single analytics portal. It provided customizable dashboards, real-time reporting, and data visualization tools for executives and business users.",
+    longDescription:
+      "The system was designed to integrate with various data sources while ensuring security and scalability for large enterprises. It featured role-based access controls, interactive visualizations, and AI-driven insights to help businesses make data-informed decisions. The architecture was built to handle high data volumes while delivering a responsive user experience.",
+    technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "D3.js",
+      "Highcharts",
+      "Tailwind CSS"
+    ],
+    features: [
+      "Executive Dashboard",
+      "Data Visualization",
+      "Enterprise Reporting",
+      "User Management",
+    ],
+    image: "/images/projects/Enterprise/enterprise_1.jpg",
+    demoUrl: "https://exist.com/data-solutions",
+    githubUrl: "https://github.com/tshingen01/data-solutions",
+    category: "web"
+  },
+  {
+    id: "logistics-web-portal",
+    title: "Logistics Management Web Portal",
+    description:
+      "A web portal designed for a logistics company to manage fleets, deliveries, and route optimization. Developed this platform for enterprise clients needing real-time shipment tracking, reporting, and operational dashboards.",
+    longDescription:
+      "As a Junior Web Developer, I typically handled front-end integration, minor backend scripting, and database query support. The portal featured real-time shipment tracking, route optimization tools, and operational dashboards. It was designed to integrate with GPS tracking systems and provide a seamless user experience for logistics managers and drivers.",
+    technologies: [
+      "HTML5",
+      "JavaScript",
+      "PHP",
+      "MySQL",
+      "CSS3",
+      "jQuery",
+      "Bootstrap",
+      "Git/GitHub",
+      "Postman",
+    ],
+    features: [
+      "Shipment tracking dashboard (real-time updates)",
+      "Fleet management module",
+      "Route optimization visualization",
+      "Delivery status notifications",
+      "Exportable reports",
+      "Admin access with role-based permissions",
+    ],
+    image: "/images/projects/Logistics/logistics_1.jpg",
+    category: "web"
+  },
+  {
+    id: "employee-web-portal",
+    title: "Employee Self-Service Portal",
+    description:
+      "An HR self-service web portal for employees to view payslips, submit leave requests, and track attendance.",
+    longDescription:
+      "As a junior developer, I  typically worked on front-end pages, form validation, and integration with backend APIs. The portal allowed employees to access their HR information, submit requests, and view company announcements. It was designed to integrate with existing HR systems while providing a user-friendly interface for employees and HR administrators.",
+    technologies: [
+      "React.js",
+      "Material UI",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Docker",
+      "Git/GitHub",
+      "Postman",
+    ],
+    features: [
+      "Employee profile dashboard",
+      "Leave request submission and approval workflow",
+      "Payslip download portal",
+      "Attendance and work schedule tracking",
+      "Admin panel for HR staff",
+      "Email notifications for leave and payroll updates",
+    ],
+    image: "/images/projects/Employee/employee_1.png",
+    category: "web"
+  },
 ];

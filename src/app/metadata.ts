@@ -10,11 +10,11 @@ export const generateMetadata = (): Metadata => {
     },
     description: SITE_CONFIG.description,
     keywords: [
-      "Ujjwal Shukla",
+      "Mark Kinsley Rimando",
       "Portfolio",
-      "Frontend Developer",
+      "Senior Full-Stack Developer",
       "Tech enthutiast",
-      "AKTU",
+      "SLU",
       "Computer Science",
       "React",
       "Next.js",
@@ -52,7 +52,7 @@ export const generateMetadata = (): Metadata => {
       title: SITE_CONFIG.name,
       description: SITE_CONFIG.description,
       images: [SITE_CONFIG.ogImage],
-      creator: "@ujjwalShukla",
+      creator: "@markKrimando",
     },
     robots: {
       index: true,
