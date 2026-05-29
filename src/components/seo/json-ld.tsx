@@ -6,12 +6,11 @@ export function JsonLd() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "mark K. Rimando",
-    alternateName: "NK",
+    name: "Mark K. Rimando",
+    alternateName: "MKR",
     url: SITE_CONFIG.url,
     email: SITE_CONFIG.links.email,
-    telephone: SITE_CONFIG.links.phone,
-    jobTitle: "Computer Science Graduate Student",
+    jobTitle: "Senior Full-Stack Developer",
     description: SITE_CONFIG.description,
     sameAs: [
       SITE_CONFIG.links.github,

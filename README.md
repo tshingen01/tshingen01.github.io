@@ -46,7 +46,7 @@ Footer
 
 Personal contact details
 
-Social links (GitHub, LinkedIn)
+Social links (GitHub)
 
 Quick navigation links
 

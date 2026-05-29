@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Mail } from "lucide-react";
 import { SITE_CONFIG } from "@/lib/constants";
 
 export function FloatingSocials() {
@@ -10,11 +10,6 @@ export function FloatingSocials() {
       icon: <Github className="h-5 w-5" />,
       href: SITE_CONFIG.links.github,
       label: "GitHub",
-    },
-    {
-      icon: <Linkedin className="h-5 w-5" />,
-      href: SITE_CONFIG.links.linkedin,
-      label: "LinkedIn",
     },
     {
       icon: <Mail className="h-5 w-5" />,

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Mail } from "lucide-react";
 import { SITE_CONFIG, NAV_ITEMS } from "@/lib/constants";
 
 const socialLinks = [
@@ -11,12 +11,6 @@ const socialLinks = [
     href: SITE_CONFIG.links.github,
     label: "GitHub",
     color: "rgba(78, 205, 196, 0.2)",
-  },
-  {
-    icon: Linkedin,
-    href: SITE_CONFIG.links.linkedin,
-    label: "LinkedIn",
-    color: "rgba(216, 178, 242, 0.2)",
   },
 ];
 
@@ -130,13 +124,6 @@ export function Footer() {
                 >
                   <Mail className="h-4 w-4 group-hover:scale-110 transition-transform" />
                   <span>Email</span>
-                </a>
-                <a
-                  href={`tel:${SITE_CONFIG.links.phone}`}
-                  className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-all duration-300 group"
-                >
-                  <Phone className="h-4 w-4 group-hover:scale-110 transition-transform" />
-                  <span>Phone</span>
                 </a>
               </div>
 
