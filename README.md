@@ -1,4 +1,4 @@
-# Ujjwal's Portfolio Website
+# markk's Portfolio Website
 
 A modern, responsive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS v4, designed to showcase my journey, projects, community work, and technical profile.
 
@@ -34,7 +34,7 @@ Light/Dark mode toggle (next-themes)
 
 Hero Section
 
-Gradient heading with my name: Ujjwal Shukla
+Gradient heading with my name: markk Shukla
 
 AI / Tech themed design aesthetic
 
@@ -201,4 +201,4 @@ Personal Portfolio V1
 
 📝 License
 
-© 2025 Ujjwal Shukla. All rights reserved."# portfolio2.0" 
+© 2025 markk Shukla. All rights reserved."# portfolio2.0" 
