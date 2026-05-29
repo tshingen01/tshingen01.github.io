@@ -93,7 +93,7 @@ export function SkillsShowcase() {
               background: "radial-gradient(circle, rgba(99,102,241,0.8) 0%, transparent 70%)",
               top: "20%",
               left: "10%",
-              animation: "float-slow 15s ease-in-out infinite",
+              animation: "float-slow 20s ease-in-out infinite",
             }}
           />
           <div
@@ -134,7 +134,7 @@ export function SkillsShowcase() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.6 }}
                   className="flex flex-row flex-nowrap gap-12 whitespace-nowrap overflow-visible select-none py-4"
                   style={{ x }}
                 >
@@ -142,7 +142,7 @@ export function SkillsShowcase() {
                     <motion.div
                       layout
                       key={skill.name}
-                      transition={{ type: "spring", stiffness: 120, damping: 20 }}
+                      transition={{ type: "spring", stiffness: 120, damping: 40 }}
                     >
                       <SkillIcon skill={skill} />
                     </motion.div>
@@ -155,7 +155,7 @@ export function SkillsShowcase() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
-                  transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+                  transition={{ duration: 0.6, type: "spring", stiffness: 100 }}
                   className="flex flex-col items-center justify-center space-y-8 md:space-y-12 w-full py-4"
                 >
                   {rows.map((row, i) => (
@@ -164,7 +164,7 @@ export function SkillsShowcase() {
                         <motion.div
                           layout
                           key={skill.name}
-                          transition={{ type: "spring", stiffness: 120, damping: 20 }}
+                          transition={{ type: "spring", stiffness: 120, damping: 40 }}
                         >
                           <SkillIcon skill={skill} />
                         </motion.div>

@@ -88,7 +88,7 @@ export function Projects() {
                 variants={ANIMATION_VARIANTS.fadeUp}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="group h-full overflow-hidden hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/50">
+                <Card className="flex flex-col group h-full overflow-hidden hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/50">
                   <div className="relative h-56 overflow-hidden bg-gradient-to-br from-primary/10 via-accent/10 to-primary/10">
                     {project.image ? (
                       <Image
@@ -122,13 +122,13 @@ export function Projects() {
                     </div>
                   </CardHeader>
 
-                  <CardContent>
-                    <p className="text-muted-foreground mb-4 text-sm leading-relaxed text-center">
+                  <CardContent className="flex-grow flex flex-col">
+                    <p className="flex-grow text-muted-foreground mb-4 text-sm leading-relaxed text-center">
                       {project.description}
                     </p>
 
                     <div className="space-y-1 mb-4">
-                      {project.features.slice(0, 2).map((feature, i) => (
+                      {project.features.slice(0, 5).map((feature, i) => (
                         <p key={i} className="text-xs text-muted-foreground/80 flex items-start">
                           <span className="mr-2 text-primary">•</span>
                           <span className="line-clamp-2">{feature}</span>
@@ -137,7 +137,7 @@ export function Projects() {
                     </div>
 
                     <div className="flex flex-wrap gap-1.5 mb-4">
-                      {project.technologies.slice(0, 4).map((tech) => (
+                      {project.technologies.slice(0, 6).map((tech) => (
                         <LavenderBadge key={tech}>
                           {tech}
                         </LavenderBadge>

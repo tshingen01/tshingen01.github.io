@@ -95,32 +95,32 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           )}
 
           <CardHeader className="pb-3 relative z-10">
-            <div className="flex items-start justify-between gap-2">
-              <div className="space-y-1">
+            <div className="flex flex-col items-start justify-between gap-2">
+              <div className="space-y-1 flex flex-row items-start gap-3">
                 <CardTitle className="text-base md:text-lg font-semibold group-hover:text-teal-light transition-colors duration-300">
                   {project.title}
                 </CardTitle>
+                <Badge
+                  variant="outline"
+                  className="border-zinc-600/70 bg-transparent text-[10px] font-mono uppercase tracking-[0.16em] text-zinc-300 shrink-0"
+                >
+                  <Code2 className="mr-1 h-3 w-3" />
+                  {CATEGORY_LABEL[project.category]}
+                </Badge>
+              </div>
+
                 <p className="text-xs md:text-sm text-zinc-400">
                   {project.description}
                 </p>
-              </div>
-
-              <Badge
-                variant="outline"
-                className="border-zinc-600/70 bg-transparent text-[10px] font-mono uppercase tracking-[0.16em] text-zinc-300 shrink-0"
-              >
-                <Code2 className="mr-1 h-3 w-3" />
-                {CATEGORY_LABEL[project.category]}
-              </Badge>
             </div>
           </CardHeader>
 
           <CardContent className="space-y-4 pt-1 relative z-10">
             {/* Tech badges with stagger animation */}
             <div className="flex flex-wrap gap-2">
-              {project.technologies.slice(0, 5).map((tech, techIndex) => (
+              {project.technologies.slice(0, 10).map((tech, techIndex) => (
                 <motion.div
-                  key={tech}
+                  key={project.id+"_tech-"+tech}
                   initial={{ opacity: 0, scale: 0.5 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
@@ -134,24 +134,33 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                   </Badge>
                 </motion.div>
               ))}
-              {project.technologies.length > 5 && (
+              {project.technologies.length > 10 && (
                 <Badge
                   variant="outline"
                   className="border-zinc-600/60 bg-transparent text-[11px] text-zinc-300"
                 >
-                  +{project.technologies.length - 5} more
+                  +{project.technologies.length - 10} more
                 </Badge>
               )}
             </div>
-
-            <ul className="space-y-1.5 text-xs text-zinc-300">
-              {project.features.slice(0, 3).map((feature) => (
-                <li key={feature} className="flex gap-2">
-                  <span className="mt-[3px] h-[3px] w-[3px] rounded-full bg-teal/60 shrink-0" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
+            <div className="flex flex-row justify-between border-t border-zinc-800/50 pt-4">
+              <ul className="space-y-1.5 flex-shrink text-xs text-zinc-300">
+                {project.features.slice(0, project.features.length/2).map((feature) => (
+                  <li key={project.id+"_feature-"+feature} className="flex gap-2">
+                    <span className="mt-[3px] h-[3px] w-[3px] rounded-full bg-teal/60 shrink-0" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <ul className="space-y-1.5 text-xs text-zinc-300">
+                {project.features.slice(project.features.length/2, 10).map((feature) => (
+                  <li key={project.id+"_feature-"+feature} className="flex gap-2">
+                    <span className="mt-[3px] h-[3px] w-[3px] rounded-full bg-teal/60 shrink-0" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
             <div className="flex items-center justify-between pt-2 text-xs text-zinc-400 border-t border-zinc-800/50">
               <span className="font-mono truncate max-w-[40%]">
