@@ -42,21 +42,24 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="space-y-6 text-lg leading-relaxed">
               <p>
-                Hi! My name is Mark Kinsley Rimando.
-                 I&apos;m a Senior Full-Stack Developer with 6+ years building scalable, secure web and blockchain-enabled fintech applications. 
+                I am a Senior Full-Stack Developer with over 9 years of professional experience designing, developing, and deploying scalable web applications and enterprise-grade software solutions.
+              </p>
+              <p>
+                My expertise spans both frontend and backend technologies, enabling me to deliver robust, high-performance applications from concept to production.
               </p>
 
               <p>
-               As an expert in React, Next.js, TypeScript, Node.js, Python, and Web3 integrations, I&apos;ve Experienced in designing frontend architectures, 
-               integrating smart contracts and crypto wallets, and delivering AI-powered analytics and automation tools.
+                Throughout my career, I have worked extensively with modern JavaScript frameworks, cloud platforms, RESTful APIs, database architecture, and microservices-based systems.
+              </p>
+              <p>
+                I am passionate about writing clean, maintainable code and building user-centric products that solve real business challenges.
               </p>
 
               <p>
-                I&apos;ve a proven track record collaborating with cross-functional teams to ship performance-focused, user-centered features and APIs.
-                My strength is being able to take ownership of full features end-to-end and ensure they are scalable, maintainable, and performant.
+                In addition to my core full-stack development expertise, I possess strong experience in Blockchain and Artificial Intelligence technologies. These advanced technologies allow me to bring innovative, future-ready solutions to complex projects.
               </p>
               <p>
-                I&apos;m now looking for a role where I can contribute to building high-quality products and work with a strong engineering team.
+                I thrive in collaborative environments, enjoy tackling challenging technical problems, and continuously stay up to date with emerging technologies to deliver cutting-edge digital experiences.
               </p>
             </div>
 
@@ -66,7 +69,7 @@ export function About() {
                   <div className="rounded-full overflow-hidden w-full h-full relative">
                     <Image
                       src="/me/me.png"
-                      alt="Mark K. Rimando"
+                      alt="Mark"
                       fill
                       sizes="300px"
                       className="object-cover"

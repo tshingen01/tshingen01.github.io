@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Github, Mail } from "lucide-react";
+import { Github, Plane, Mail, } from "lucide-react";
 import { SITE_CONFIG, NAV_ITEMS } from "@/lib/constants";
-
+import Image from "next/image";
 const socialLinks = [
   {
     icon: Github,
@@ -12,6 +12,20 @@ const socialLinks = [
     label: "GitHub",
     color: "rgba(78, 205, 196, 0.2)",
   },
+  {
+    icon: () => (
+      <Image
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Telegram_X_2019_Logo.svg/120px-Telegram_X_2019_Logo.svg.png"
+        alt="Software Logo"
+        width={28}
+        height={28}
+        className="object-contain"
+        unoptimized
+      />),
+    href: SITE_CONFIG.links.telegram,
+    label: "Telegram",
+    color: "rgba(216, 178, 242, 0.2)",
+  }
 ];
 
 export function Footer() {

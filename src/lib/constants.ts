@@ -9,6 +9,7 @@ export const SITE_CONFIG = {
   links: {
     email: "tshingen0821@gmail.com",
     github: "https://github.com/tshingen01",
+    telegram: "https://t.me/yy339622",
   }
 };
 

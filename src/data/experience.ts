@@ -15,7 +15,7 @@ export const experienceData: Experience[] = [
     id: "coins-senior-fullstack",
     company: "Coins.ph",
     role: "Senior Full-Stack Developer",
-    duration: "Jun 2023 - Feb 2026",
+    duration: "Jun 2024 - Feb 2026",
     location: "Taguig City, Metro Manila, Philippines",
     description:
       "Worked as a Senior Full-Stack Developer helping both building robust fintech products and ensuring their secure, scalable operation, while mentoring teams and integrating cutting-edge blockchain functionality.",
@@ -36,9 +36,9 @@ export const experienceData: Experience[] = [
   },
 
   {
-    id: "sprout-solutions-junior-fullstack",
+    id: "sprout-solutions-fullstack",
     company: "Sprout Solutions",
-    role: "Junior Full-Stack Developer",
+    role: "Full-Stack Developer",
     duration: "in 2022",
     location: "Makati City, Metro Manila, Philippines · Remote",
     description:
@@ -74,29 +74,13 @@ export const experienceData: Experience[] = [
     technologies: ["React.js", "Angular", "Vue.js", "TypeScript", "Tailwind CSS", "Material UI"],
     type: "full-time"
   },
-  /*
+  
   {
-    id: "esl-backend",
-    company: "Exist Software Labs",
-    role: "Backend Developer",
-    duration: "Mar 2020 - Nov 2021",
-    location: "Pasig City, Metro Manila, Philippines · Remote",
-    description:
-      "Worked on enterprise web applications, digital transformation projects, cloud systems, and custom software solutions for local and international clients.",
-    achievements: [
-      "Built scalable APIs and backend services for enterprise applications.",
-      "Implemented business logic, authentication, and database operations.",
-    ],
-    technologies: ["Node.js + Express", "Python + Django/Flask", "PHP + Laravel", "PostgreSQL", "MongoDB"],
-    type: "full-time"
-  },
-  */
-  {
-    id: "yondu-web-developer",
-    company: "Yondu, Inc.",
+    id: "IOL-web-developer",
+    company: "IOL Inc.",
     role: "Web Developer",
     duration: "Jan 2019 - Feb 2020",
-    location: "Taguig City, Metro Manila, Philippines",
+    location: "Baguio City, Benguet, Philippines",
     description:
       "I involved supporting client projects by building and maintaining web applications while learning from more experienced developers.",
     achievements: [
@@ -108,12 +92,13 @@ export const experienceData: Experience[] = [
     technologies: ["Laravel", "PHP", "MySQL", "Jira/Trello", "basic CI/CD"],
     type: "full-time"
   },
+
   {
-    id: "esl-frontend-developer-intern",
-    company: "Exist Software Labs",
+    id: "linkage-frontend-developer-intern",
+    company: "Linkage",
     role: "Frontend Developer Intern",
     duration: "Jun 2017 - Feb 2018",
-    location: "Pasig City, Metro Manila, Philippines · Remote",
+    location: "Baguio City, Benguet, Philippines",
     description:
       "Shadowed senior developers to understand frontend workflows.",
     achievements: [

@@ -6,56 +6,43 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import Image from "next/image";
+import Link from "next/link";
 
 const achievements = [
   {
     icon: () => (
       <Image
-        src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
-        alt="Google Logo"
+        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/rest.png"
+        alt="Software Logo"
         width={28}
         height={28}
         className="object-contain"
         unoptimized
       />
     ),
-    title: "Google Student Ambassador (2x)",
+    url: 'https://www.hackerrank.com/certificates/6b8a37041328',
+    title: "Software Engineer @ HackerRank",
     description:
-      "Selected again for the 2026–2027 cohort. Led workshops, tech sessions, and scaled student engagement across AI, Cloud, and Open Source initiatives.",
-    metric: "2025 – 2027",
+      "It covers topics like Problem-Solving, SQL, and REST API. I can contribute to building and improving the platform, enhancing user experience, and ensuring the reliability of our services.",
+    metric: "2026",
     color: "rgba(99, 102, 241, 0.15)",
   },
   {
     icon: () => (
       <Image
-        src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"
-        alt="IBM Logo"
+        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png"
+        alt="Frontend Logo"
         width={24}
         height={24}
         className="object-contain brightness-125"
         unoptimized
       />
     ),
-    title: "AI Intern @ IBM",
+    url: 'https://www.hackerrank.com/certificates/7b691f60eed1',
+    title: "Frontend Developer @ HackerRank",
     description:
-      "Worked on improving model accuracy for business automation tasks. Got to build and test systems that pulled insights from data and helped speed up internal processes.",
-    metric: "Aug 2025 – Oct 2025",
-    color: "rgba(139, 92, 246, 0.15)",
-  },
-  {
-    icon: Award,
-    title: "Hack India Finalist",
-    description:
-      "Built a fashion chatbot (Fashionista) that took voice, text, and image input and gave outfit suggestions based on weather, location, and event context. We placed Top 15 nationally.",
-    metric: "Top 15",
-    color: "rgba(99, 102, 241, 0.15)",
-  },
-  {
-    icon: Users,
-    title: "Coders Circle",
-    description:
-      "Co-founded a coding community from scratch. We run events, pair juniors with mentors, and help people get into open-source. It’s been cool watching it grow.",
-    metric: "1700+ Members",
+      "It covers topics like React, CSS, and JavaScript. I can contribute to building and improving the platform, enhancing user experience, and ensuring the reliability of our services.",
+    metric: "2026",
     color: "rgba(139, 92, 246, 0.15)",
   },
 ];
@@ -104,7 +91,7 @@ export function Achievements() {
           transition={{ duration: 0.6 }}
           className="text-5xl md:text-6xl font-extrabold gradient-text drop-shadow-lg"
         >
-          Achievements & Impact
+          Achievements
         </motion.h2>
 
         <motion.p
@@ -162,7 +149,9 @@ export function Achievements() {
                       style={{ background: achievement.color }}
                     />
                     <div className="relative z-10 flex items-center justify-center w-full h-full">
-                      <Icon />
+                      <Link href={achievement.url} target="_blank" rel="noopener noreferrer">
+                        <Icon />
+                      </Link>
                     </div>
                   </motion.div>
 

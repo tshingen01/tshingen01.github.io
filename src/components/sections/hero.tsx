@@ -79,12 +79,12 @@ function OrbitingShapes() {
 }
 
 function AnimatedName() {
-  const text = "Mark K. Rimando";
+  const text = "Mark Kinsley Rimando";
   const chars = text.split("");
 
   return (
     <motion.h1
-      className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
+      className="font-display text-3xl md:text-5xl lg:text-6xl font-bold mb-6"
       initial="hidden"
       animate="visible"
       variants={{
@@ -207,18 +207,16 @@ export function Hero() {
 
           <motion.div
             variants={ANIMATION_VARIANTS.fadeUp}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            transition={{ duration: 0.3, delay: 0.8 }}
             className="text-xl md:text-2xl text-muted-foreground mb-10"
           >
             <span className="block mt-2">
               <Typewriter
                 words={[
-                  "Full Stack Developer",
-                  "Frontend Architecture Designer",
-                  "Blockchain Enthusiast",
-                  "AI Explorer",
-                  "Community Builder",
-                  "Open Source Contributor"
+                  "Tech Stack Hybrid Intelligent Next-Gen Engineer",
+                  "Senior Full-stack Developer",
+                  "Advanced Blockchain Innovator",
+                  "AI & Web Enthusiast",
                 ]}
                 className="text-primary font-semibold"
               />

@@ -152,37 +152,36 @@ export const projects: Project[] = [
       "Trade history export",
     ],
     image: "/images/projects/Trading/trading_1.jpg",
-    demoUrl: "https://www.coins.ph/en-ph?utm_source",
+    demoUrl: "https://stocksharp.com/",
     githubUrl: "https://github.com/tshingen01/portfolio",
     category: "blockchain"
   },
   {
     id: "market-intel-platform",
-    title: "AI-Powered Crypto Insights & Market Intelligence Platform",
+    title: "AI-Powered Crypto Trading Hub with a UI",
     description:
-      "AI-enhanced analytics and personalized recommendation system integrated into the Coins ecosystem.",
+      "This application is your centralized hub for all things crypto. With Sibyl, you can connect multiple crypto exchange accounts, deploy smart trading strategies, and access a wide range of AI-powered tools, all within a secure, locally deployed environment.",
     longDescription:
       "Built intelligent financial insight systems leveraging AI and machine learning for personalized recommendations, market intelligence, risk detection, behavioral analytics, Coins.ph introduced enhanced in-app news and market intelligence integrations during this period.",
     technologies: [
-      "Python",
-      "TensorFlow",
-      "Next.js",
-      "Node.js",
-      "React",
-      "D3.js",
+      "Streamlit",
       "FastAPI",
-      "PostgreSQL",
+      "Sqlite",
+      "LLM",
+      "MCP",
+      "llama.cpp"
     ],
     features: [
-      "AI market summaries",
-      "Personalized crypto recommendations",
-      "Portfolio risk analysis",
-      "Smart notifications",
-      "Behavioral segmentation",
-      "Sentiment analysis",
-      "AI chatbot support",
-      "Price movement alerts",
-      "Automated insights feed",
+      "Interactive Dashboard UI",
+      "AI Agents & LLMs that power each Sibyl functionality",
+      "Connected Crypto Exchange Overview",
+      "Strategy Planning",
+      "SPOT Trading",
+      "Price Movement Prediction using ML",
+      "Data Analysis & Visualization - Analyst Module",
+      "Crypto News & Market Sentiment",
+      "Connect with Popular Exchanges",
+      "Crypto Wiki Chatbot"
     ],
     image: "/images/projects/Market-Intel/market_intel_1.jpg",
     demoUrl: "https://nmaroulis.github.io/sibyl/index.html",
@@ -191,7 +190,7 @@ export const projects: Project[] = [
   },
   {
     id: "sprout-hris-payroll",
-    title: "Sprout HRIS & Payroll Management Platform Enhancement",
+    title: "Sprout HRIS & Payroll Management Platform",
     description:
       "Beginner-friendly Python tool to manage and analyze student marks using CSV and pandas.",
     longDescription:

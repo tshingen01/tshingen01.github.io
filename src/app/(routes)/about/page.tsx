@@ -4,8 +4,8 @@ import { SkillsShowcase} from "@/components/sections/skills";
 import { Achievements } from "@/components/sections/achievements";
 
 export const metadata: Metadata = {
-  title: "About | Mark K. Rimando",
-  description: "Learn more about Mark K. Rimando  - Bachelor in Computer Science student at SLU University",
+  title: "About | Mark Kinsley Rimando",
+  description: "Learn more about Mark Kinsley Rimando - Bachelor in Computer Science student at SLU University",
 };
 
 export default function AboutPage() {

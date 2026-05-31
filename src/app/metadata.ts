@@ -10,7 +10,9 @@ export const generateMetadata = (): Metadata => {
     },
     description: SITE_CONFIG.description,
     keywords: [
-      "Mark Kinsley Rimando",
+      "Mark",
+      "Kinsley",
+      "Rimando",
       "Portfolio",
       "Senior Full-Stack Developer",
       "Tech enthutiast",
