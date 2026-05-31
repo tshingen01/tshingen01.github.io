@@ -34,6 +34,7 @@ export default function RootLayout({
       className="dark" // 👈 force dark on initial SSR
     >
       <head>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <JsonLd />
       </head>
       <body

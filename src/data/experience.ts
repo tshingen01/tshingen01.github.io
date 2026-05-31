@@ -12,13 +12,52 @@ export type Experience = {
 
 export const experienceData: Experience[] = [
   {
+    id: "freelance-fullstack",
+    company: "Freelancer",
+    role: "Senior Full-Stack Developer",
+    duration: "Feb 2026 - now",
+    location: "Remote",
+    description:
+      "I work as a freelance full-stack developer, collaborating with clients worldwide to deliver web, AI, and blockchain solutions.",
+    achievements: [
+      "Develop web, AI, and blockchain solutions for international clients.",
+      "Design scalable cloud architectures and full-stack applications.",
+      "Lead technical planning and system design for startup and enterprise projects.",
+      "Recently E-commerce, fintech, and SaaS development with a focus on performance, security, and user experience."
+    ],
+    technologies: [],
+    type: "full-time"
+  },
+  {
+    id: "sprout-solutions-fullstack",
+    company: "Sprout Solutions",
+    role: "Senior Full-Stack Developer",
+    duration: "Jan 2024 - Feb 2026",
+    location: "Makati City, Metro Manila, Philippines · Remote",
+    description:
+      "",
+    achievements: [
+      "Led development of HR and payroll platform features.",
+      "Designed scalable backend services and modern frontend applications.",
+      "Mentored junior developers and participated in architecture decisions.",
+      "Worked in a hybrid/remote environment serving thousands of business users."
+    ],
+    technologies: [
+      "Agile Environment",
+      "Team Support",
+      "Bug Fixing & Maintenance",
+      "Documentation"
+    ],
+    type: "full-time"
+  },
+  {
     id: "coins-senior-fullstack",
     company: "Coins.ph",
-    role: "Senior Full-Stack Developer",
-    duration: "Jun 2024 - Feb 2026",
-    location: "Taguig City, Metro Manila, Philippines",
+    role: "Full-Stack Developer",
+    duration: "Aug 2022 - Nov 2023",
+    location: "Taguig City, Metro Manila, Philippines · Remote",
     description:
-      "Worked as a Senior Full-Stack Developer helping both building robust fintech products and ensuring their secure, scalable operation, while mentoring teams and integrating cutting-edge blockchain functionality.",
+      "Worked as a Full-Stack Developer helping both building robust fintech products and ensuring their secure, scalable operation, while mentoring teams and integrating cutting-edge blockchain functionality.",
     achievements: [
       "Worked on scaling crypto wallet features and integrating new coins for users.",
       "Optimized apps for performance, reliability, and user experience.",
@@ -36,33 +75,10 @@ export const experienceData: Experience[] = [
   },
 
   {
-    id: "sprout-solutions-fullstack",
-    company: "Sprout Solutions",
-    role: "Full-Stack Developer",
-    duration: "in 2022",
-    location: "Makati City, Metro Manila, Philippines · Remote",
-    description:
-      "I focused on supporting the platform's development and maintenance, learning from senior colleagues, and gradually taking ownership of smaller features or modules.",
-    achievements: [
-      "Built and maintained user-facing features using frameworks like React, Vue, or Angular, ensuring a responsive and user-friendly interface.",
-      "Assisted in building APIs, integrating databases (MySQL, PostgreSQL), and handling server-side logic.",
-      "Troubleshot issues, resolved reported bugs, and maintained code quality.",
-      "Wrote unit and integration tests, collaborated with QA to ensure stable releases."
-    ],
-    technologies: [
-      "Agile Environment",
-      "Team Support",
-      "Bug Fixing & Maintenance",
-      "Documentation"
-    ],
-    type: "part-time"
-  },
-
-  {
     id: "esl-frontend",
     company: "Exist Software Labs",
     role: "Frontend Developer",
-    duration: "Mar 2020 - Nov 2021",
+    duration: "Mar 2020 - May 2022",
     location: "Pasig City, Metro Manila, Philippines · Remote",
     description:
       "Worked on enterprise web applications, digital transformation projects, cloud systems, and custom software solutions for local and international clients.",

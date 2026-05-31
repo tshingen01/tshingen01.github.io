@@ -12,7 +12,7 @@ import {
 
 export function About() {
   return (
-    <section className="py-20 px-4">
+    <section className="py-12 px-4">
       <div className="container mx-auto max-w-6xl">
         <ScrollReveal delay={0.1}>
           <motion.div
@@ -37,7 +37,7 @@ export function About() {
           viewport={{ once: true, amount: 0.3 }}
           variants={ANIMATION_VARIANTS.fadeUp}
           transition={{ delay: 0.2 }}
-          className="mb-16"
+          className="mb-8"
         >
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="space-y-6 text-lg leading-relaxed">
