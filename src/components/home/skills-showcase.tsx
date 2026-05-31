@@ -13,18 +13,14 @@ interface Skill {
 
 const skills: Skill[] = [
   //-- Frontend
-  { name: "HTML", logo: "https://skillicons.dev/icons?i=html" },
-  { name: "CSS", logo: "https://skillicons.dev/icons?i=css" },
-  { name: "JavaScript", logo: "https://skillicons.dev/icons?i=js" },
-  { name: "TypeScript", logo: "https://skillicons.dev/icons?i=ts" },
   { name: "Laravel", logo: "https://skillicons.dev/icons?i=laravel" },
+  { name: "TypeScript", logo: "https://skillicons.dev/icons?i=ts" },
   { name: "React", logo: "https://skillicons.dev/icons?i=react" },
   { name: "Next.js", logo: "https://skillicons.dev/icons?i=nextjs&theme=light" },
   { name: "Vue.js", logo: "https://skillicons.dev/icons?i=vuejs" },
   { name: "Tailwind", logo: "https://skillicons.dev/icons?i=tailwind" },
   { name: "Material UI", logo: "https://skillicons.dev/icons?i=materialui" },
   //--- Backend
-  { name: 'php', logo: "https://skillicons.dev/icons?i=php" },
   { name: 'Nest.js', logo: "https://skillicons.dev/icons?i=nest" },
   { name: "Node.js", logo: "https://skillicons.dev/icons?i=nodejs" },
   { name: "Express", logo: "https://skillicons.dev/icons?i=express" },
@@ -42,7 +38,6 @@ const skills: Skill[] = [
   { name: "NumPy", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
   
   //--- Databases & Cloud
-  { name: "MySQL", logo: "https://skillicons.dev/icons?i=mysql" },
   { name: "MongoDB", logo: "https://skillicons.dev/icons?i=mongodb" },
   { name: "PostgreSQL", logo: "https://skillicons.dev/icons?i=postgresql" },
   { name: "Firebase", logo: "https://skillicons.dev/icons?i=firebase" },
@@ -50,8 +45,6 @@ const skills: Skill[] = [
   
   //--- Tools 
   { name: "Vercel", logo: "https://skillicons.dev/icons?i=vercel&theme=light" },
-  { name: "Git", logo: "https://skillicons.dev/icons?i=git" },
-  { name: "GitHub", logo: "https://skillicons.dev/icons?i=github&theme=light" },
   { name: "Docker", logo: "https://skillicons.dev/icons?i=docker" },
   { name: "Kubernetes", logo: "https://skillicons.dev/icons?i=kubernetes" },
   { name: "Jest", logo: "https://skillicons.dev/icons?i=jest" },
@@ -77,7 +70,6 @@ export function SkillsShowcase() {
     skills.slice(0, 10),
     skills.slice(10, 19),
     skills.slice(19, 27),
-    skills.slice(27, 33),
   ];
 
   return (
@@ -117,7 +109,7 @@ export function SkillsShowcase() {
           className="relative z-10 text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-extrabold mb-3 tracking-tight gradient-text">
-            Technical Skills
+            Core Skills
           </h2>
           <p className="text-gray-400 text-lg font-light">
             Tools and technologies I work with daily

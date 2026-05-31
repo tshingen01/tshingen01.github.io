@@ -29,16 +29,22 @@ export const skillsData: SkillCategory[] = [
     skills: [
       { name: "React.js", level: 90 },
       { name: "Next.js", level: 85 },
+      { name: "Vue.js", level: 85 },
       { name: "Tailwind CSS", level: 88 },
       { name: "Three.js", level: 75 },
-      { name: "React.js", level: 80 }
+      { name: "Nest.js", level: 80 }
     ]
   },
   {
     title: "Backend & Databases",
     icon: "⚙️",
     skills: [
+      { name: "Node.js", level: 89 },
+      { name: "Express", level: 88 },
       { name: "SupaBase", level: 74 },
+      { name: "MYSQL", level: 85 },
+      { name: "POSTGRESQL", level: 80 },
+      { name: "MongoDB", level: 90 },
       { name: "MYSQL", level: 85 },
       { name: "Firebase", level: 90 }
     ]
