@@ -78,7 +78,7 @@ export const projects: Project[] = [
       "Fraud detection system",
       "Payment confirmation notifications",
     ],
-    image: "/images/projects/QRPh-Crypto/qrph_1.jpg",
+    image: "/images/projects/QRPh-crypto/qrph_1.jpg",
     demoUrl: "https://www.coins.ph/en-ph?utm_source",
     githubUrl: "https://github.com/tshingen01/crypto-qrpn", // ###
     category: "blockchain"
