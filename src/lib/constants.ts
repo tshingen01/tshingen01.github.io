@@ -10,6 +10,11 @@ export const SITE_CONFIG = {
     email: "tshingen0821@gmail.com",
     github: "https://github.com/tshingen01",
     telegram: "https://t.me/yy339622",
+    leetcode: "https://leetcode.com/tshingen01",
+    linkedin: "https://www.linkedin.com/in/mark-kinsley-rimando-9b1a4b1b2/",
+    hackerrank: "https://www.hackerrank.com/profile/tshingen821",
+    devTo: "https://dev.to/tshingen01",
+    stackOverflow: "https://stackoverflow.com/users/32788228/tshingen01",
   }
 };
 

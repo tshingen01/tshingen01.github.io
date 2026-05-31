@@ -6,7 +6,7 @@ export function JsonLd() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "M.K. Rimando",
+    name: "Mark Kinsley Rimando",
     alternateName: "MKR",
     url: SITE_CONFIG.url,
     email: SITE_CONFIG.links.email,

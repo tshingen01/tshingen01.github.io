@@ -2,29 +2,47 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Github, Plane, Mail, } from "lucide-react";
+import { Mail } from "lucide-react";
+import { FaGithub, FaTelegram, FaHackerrank, FaStackOverflow  } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { BiLogoDevTo } from "react-icons/bi";
 import { SITE_CONFIG, NAV_ITEMS } from "@/lib/constants";
-import Image from "next/image";
 const socialLinks = [
   {
-    icon: Github,
+    icon: FaGithub,
     href: SITE_CONFIG.links.github,
     label: "GitHub",
     color: "rgba(78, 205, 196, 0.2)",
   },
   {
-    icon: () => (
-      <Image
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Telegram_X_2019_Logo.svg/120px-Telegram_X_2019_Logo.svg.png"
-        alt="Software Logo"
-        width={28}
-        height={28}
-        className="object-contain"
-        unoptimized
-      />),
+    icon: FaTelegram,
     href: SITE_CONFIG.links.telegram,
     label: "Telegram",
     color: "rgba(216, 178, 242, 0.2)",
+  },
+  {
+    icon: SiLeetcode,
+    href: SITE_CONFIG.links.leetcode,
+    label: "LeetCode",
+    color: "rgba(78, 205, 196, 0.2)",
+  },
+  {
+    icon: FaHackerrank,
+    href: SITE_CONFIG.links.hackerrank,
+    label: "HackerRank",
+    color: "rgba(78, 205, 196, 0.2)",
+  },
+  {
+    icon: BiLogoDevTo,
+    href: SITE_CONFIG.links.devTo,
+    label: "Dev.to",
+    color: "rgba(78, 205, 196, 0.2)",
+  },
+  {
+    icon: FaStackOverflow,
+    href: SITE_CONFIG.links.stackOverflow,
+    label: "Stack Overflow",
+    color: "rgba(78, 205, 196, 0.2)",
   }
 ];
 

@@ -73,7 +73,7 @@ export function Navbar() {
               className="font-display text-xl font-bold transition-all hover:opacity-80 group"
             >
               <span className="gradient-text tracking-tight">
-                M.K. Rimando
+                TSHINGEN
               </span>
             </Link>
 
