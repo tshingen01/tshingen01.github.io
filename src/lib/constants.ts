@@ -23,7 +23,7 @@ export const NAV_ITEMS = [
   { label: "About", href: "/about" },
   { label: "Experience", href: "/experience" },
   { label: "Projects", href: "/projects" },
-  { label: "Achievements", href: "/#achievements" }
+  { label: "Join Me", href: "/join-me" }
 ];
 
 export const ANIMATION_VARIANTS = {

@@ -20,7 +20,7 @@ const achievements = [
         unoptimized
       />
     ),
-    url: 'https://www.hackerrank.com/certificates/6b8a37041328',
+    url: 'https://www.hackerrank.com/certificates/aa8ed200da02',
     title: "Software Engineer @ HackerRank",
     description:
       "It covers topics like Problem-Solving, SQL, and REST API. I can contribute to building and improving the platform, enhancing user experience, and ensuring the reliability of our services.",
@@ -38,10 +38,46 @@ const achievements = [
         unoptimized
       />
     ),
-    url: 'https://www.hackerrank.com/certificates/7b691f60eed1',
+    url: 'https://www.hackerrank.com/certificates/9a5c52f7b22c',
     title: "Frontend Developer @ HackerRank",
     description:
       "It covers topics like React, CSS, and JavaScript. I can contribute to building and improving the platform, enhancing user experience, and ensuring the reliability of our services.",
+    metric: "2026",
+    color: "rgba(139, 92, 246, 0.15)",
+  },
+  {
+    icon: () => (
+      <Image
+        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/rust.png"
+        alt="R Language Logo"
+        width={24}
+        height={24}
+        className="object-contain brightness-125"
+        unoptimized
+      />
+    ),
+    url: 'https://www.hackerrank.com/certificates/3aa14f420bb0',
+    title: "R Language Skill @ HackerRank",
+    description:
+      "It includes slightly advanced concepts of the R programming language such as data manipulation, visualization, and statistical modeling, writing efficient and readable code, and working with the R ecosystem.",
+    metric: "2026",
+    color: "rgba(139, 92, 246, 0.15)",
+  },
+  {
+    icon: () => (
+      <Image
+        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png"
+        alt="Python Logo"
+        width={24}
+        height={24}
+        className="object-contain brightness-125"
+        unoptimized
+      />
+    ),
+    url: 'https://www.hackerrank.com/certificates/81137fffe087',
+    title: "Python Skill @ HackerRank",
+    description:
+      "It covers topics like Python syntax, data structures, and algorithms. I can contribute to building and improving the platform, enhancing user experience, and ensuring the reliability of our services.",
     metric: "2026",
     color: "rgba(139, 92, 246, 0.15)",
   },
@@ -140,20 +176,20 @@ export function Achievements() {
                 />
 
                 <CardContent className="relative text-center z-10 flex flex-col items-center justify-between h-full">
-                  <motion.div
-                    className="relative mx-auto w-16 h-16 rounded-full flex items-center justify-center mb-5"
-                    whileHover={{ scale: 1.1 }}
-                  >
-                    <div
-                      className="absolute inset-0 rounded-full"
-                      style={{ background: achievement.color }}
-                    />
-                    <div className="relative z-10 flex items-center justify-center w-full h-full">
-                      <Link href={achievement.url} target="_blank" rel="noopener noreferrer">
-                        <Icon />
-                      </Link>
-                    </div>
-                  </motion.div>
+                  <Link href={achievement.url} target="_blank" rel="noopener noreferrer">
+                    <motion.div
+                      className="relative mx-auto w-16 h-16 rounded-full flex items-center justify-center mb-5"
+                      whileHover={{ scale: 1.1 }}
+                    >
+                      <div
+                        className="absolute inset-0 rounded-full"
+                        style={{ background: achievement.color }}
+                      />
+                        <div className="relative z-10 flex items-center justify-center w-full h-full">
+                          <Icon />
+                        </div>
+                    </motion.div>
+                  </Link>
 
                   <div>
                     <h3 className="font-bold text-2xl mb-2">

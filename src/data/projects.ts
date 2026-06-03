@@ -153,7 +153,7 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/Trading/trading_1.jpg",
     demoUrl: "https://stocksharp.com/",
-    githubUrl: "https://github.com/tshingen01/portfolio",
+    githubUrl: "https://github.com/tshingen01/market_intel_platform",
     category: "blockchain"
   },
   {
@@ -222,7 +222,7 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/Sprout-HRIS-Payroll/sprout_hris_payroll_1.jpg",
     demoUrl: "https://www.sprout.ph/hris-payroll",
-    githubUrl: "https://github.com/tshingen01/Student-result-analyzer",
+    githubUrl: "https://github.com/tshingen01/student-result-analyzer",
     category: "web"
   },
   {
@@ -257,7 +257,7 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/Sprout-RP/sr_perform_1.jpg",
     demoUrl: "https://www.sprout.ph/recruitment-performance",
-    githubUrl: "https://github.com/tshingen01/Student-result-analyzer",
+    githubUrl: "https://github.com/tshingen01/recruitment",
     category: "web"
   },
   {
@@ -312,7 +312,7 @@ export const projects: Project[] = [
     ],
     image: "/images/projects/Healthcare/healthcare_1.jpg",
     demoUrl: "https://exist.com/healthcare",
-    githubUrl: "https://github.com/tshingen01/healthcare",
+    githubUrl: "https://github.com/tshingen01/emr-healthcare",
     category: "mobile"
   },
   {
