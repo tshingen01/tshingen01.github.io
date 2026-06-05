@@ -73,7 +73,6 @@ export const experienceData: Experience[] = [
     ],
     type: "full-time"
   },
-
   {
     id: "esl-frontend",
     company: "Exist Software Labs",
@@ -90,7 +89,6 @@ export const experienceData: Experience[] = [
     technologies: ["React.js", "Angular", "Vue.js", "TypeScript", "Tailwind CSS", "Material UI"],
     type: "full-time"
   },
-  
   {
     id: "IOL-web-developer",
     company: "IOL Inc.",
@@ -108,7 +106,6 @@ export const experienceData: Experience[] = [
     technologies: ["Laravel", "PHP", "MySQL", "Jira/Trello", "basic CI/CD"],
     type: "full-time"
   },
-
   {
     id: "linkage-frontend-developer-intern",
     company: "Linkage",
