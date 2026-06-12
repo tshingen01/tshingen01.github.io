@@ -12,40 +12,39 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  
   {
-    id: "shoptoli",
-    title: "Shoptoli WooCommerce Multivendor Store",
+    id: "ai-neuroscanning",
+    title: "AI-Driven Neuroscanning System",
     description:
-      "Shoptoli is a modern multivendor e-commerce marketplace rebuilt and optimized on WordPress + WooCommerce in 2026.",
+      "Increased data processing speed by 23% and improved accuracy of neural pattern detection by 15%.",
     longDescription:
-      "The project focused on improving performance, navigation, conversion optimization, and marketplace scalability.The development team redesigned the WooCommerce architecture using a custom WordPress theme implementation and multiple advanced WooCommerce extensions. The goal was to transform Shoptoli into a faster and more conversion-focused WooCommerce marketplace with Better product filtering, Improved mobile UX, Faster product browsing, Vendor marketplace functionality, and Optimized checkout flow. The project also addressed common WooCommerce issues such as plugin overload, navigation complexity, and slow product search.",
+      "Developed an AI-powered neuroscience platform used for brain signal acquisition, processing, visualization, and analysis. The platform enabled clinicians and researchers to analyze neurological patterns in near real-time through advanced AI-assisted workflows.",
     technologies: [
-      "WordPress",
-      "WooCommerce",
-      "Shop Mania",
-      "PHP",
-      "HTML5",
-      "JavaScript",
-      "Custom CSS",
-      "WCFM Multivendor",
+      "AI Analytics",
+      "Python",
+      "React",
+      "TypeScript",
+      "Node.js",
+      "TensorFlow",
+      "WebSockets",
+      "Chart.js",
+      "Redis",
+      "Docker"
     ],
     features: [
-      "WooCommerce multivendor marketplace",
-      "Advanced AJAX product search",
-      "Product comparison system",
-      "Wishlist functionality",
-      "Product variation swatches",
-      "Optimized cart experience",
-      "Mobile-first responsive design",
-      "Vendor management",
-      "Conversion-focused UI",
-      "Performance optimization",
-      "Modern WooCommerce theme customization",
+      "Real-time brain signal monitoring",
+      "AI-assisted neural pattern analysis",
+      "EEG data visualization",
+      "Patient session management",
+      "Clinical reporting dashboard",
+      "Research data export",
+      "Historical trend analysis",
+      "Alert and anomaly detection",
+      "Multi-user collaboration",
+      "Role-based access control"
     ],
-    image: "/images/projects/Shoptoli/shoptoli-6215.webp",
-    demoUrl: "https://shoptoli.in/",
-    category: "web"
+    image: "/images/projects/neuroscanning.jpg",
+    category: "ai"
   },
   {
     id: "qrph-crypto",
@@ -78,44 +77,114 @@ export const projects: Project[] = [
       "Fraud detection system",
       "Payment confirmation notifications",
     ],
-    image: "/images/projects/QRPh-crypto/qrph_1.jpg",
+    image: "/images/projects/qrph.jpg",
     demoUrl: "https://www.coins.ph/en-ph?utm_source",
     githubUrl: "https://github.com/tshingen01/crypto-qrpn", // ###
     category: "blockchain"
   },
   {
-    id: "poczta-kartkowa",
-    title: "Poczta Kartkowa WooCommerce Modernization",
+    id: "wellness-marketplace",
+    title: "Wellness Marketplace",
     description:
-      "Poczta Kartkowa is a personalized greeting-card e-commerce platform that underwent extensive modernization in 2026 using WordPress and WooCommerce.",
+      "Developed a marketplace platform connecting users with wellness providers, health services, subscriptions, and personalized wellness programs.",
     longDescription:
-      "The project focused on stabilizing an aging WooCommerce infrastructure while improving payment reliability, maintainability, and platform performance.",
+      "",
     technologies: [
-      "WordPress",
-      "WooCommerce",
-      "HTML5", 
-      "CSS3", 
-      "JavaScript",
-      "MySQL",
-      "PHP",
-      "React",
-      "Payment APIs",
-      "Caching + Query Optimization",
+      "Next.js",
+      "Stripe",
+      "TypeScript",
+      "Prisma",
+      "Node.js",
+      "CloudFront",
+      "PostgreSQL",
+      "Vercel",
+      "Tailwind CSS"
     ],
     features: [
-      "Personalized product ordering",
-      "WooCommerce checkout optimization",
-      "Payment gateway integrations",
-      "Shipping & delivery integrations",
-      "Legacy system refactoring",
-      "Admin workflow improvements",
-      "Responsive storefront",
-      "Order automation",
-      "Stability monitoring",
-      "Platform maintainability upgrades",
+      "Service marketplace",
+      "Provider profiles",
+      "Appointment booking",
+      "Subscription management",
+      "Online payment processing",
+      "User reviews and ratings",
+      "Recommendation engine",
+      "Personalized wellness plans",
+      "Search and filtering",
+      "Analytics dashboard",
+      "CMS management",
+      "Referral program"
     ],
-    image: "/images/projects/Poczta-Kartkowa/poczta-kartkowa_1.png",
-    demoUrl: "https://pocztakartkowa.pl/",
+    image: "/images/projects/wellness-marketplace.png",
+    category: "web"
+  },
+  {
+    id: "clinical-trial-data-platform",
+    title: "Clinical Trial Data Platform",
+    description:
+      "Modern clinical trial platforms commonly include participant tracking, AI-assisted screening, compliance reporting, and research analytics capabilities.",
+    longDescription:
+      "Built a centralized platform for managing clinical trials, participant enrollment, study workflows, and regulatory compliance documentation.",
+    technologies: [
+      "Sentry",
+      "NestJS",
+      "AWS",
+      "Docker",
+      "GraphQL",
+      "Elasticsearch"
+    ],
+    features: [
+      "Trial management dashboard",
+      "Participant enrollment tracking",
+      "Research workflow automation",
+      "AI-assisted participant screening",
+      "Compliance reporting",
+      "Electronic document management",
+      "Audit logging",
+      "Analytics and KPI dashboards",
+      "Multi-study management",
+      "Collaboration workspace",
+      "Notification center",
+      "Export and reporting tools"
+    ],
+    image: "/images/projects/clinical-trial.png",
+    category: "web"
+  },
+  {
+    id: "unique-id",
+    title: "Clinic Networking Platform",
+    description:
+      "Developed a healthcare collaboration platform that connected clinics, physicians, specialists, and referral networks into a unified ecosystem.",
+    longDescription:
+      "",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Node.js",
+      "PostgreSQL",
+      "Redis",
+      "AWS",
+      "Docker",
+      "GraphQL",
+      "Socket.IO",
+      "Prisma",
+      "Elasticsearch"
+    ],
+    features: [
+      "Clinic directory",
+      "Provider networking",
+      "Referral management",
+      "Secure messaging",
+      "Appointment coordination",
+      "Provider profiles",
+      "Healthcare collaboration tools",
+      "Analytics dashboards",
+      "Activity tracking",
+      "Notification center",
+      "Search and discovery",
+      "Administrative reporting"
+    ],
+    image: "/images/projects/clinic-networking.jpg",
     category: "web"
   },
   {
@@ -151,7 +220,7 @@ export const projects: Project[] = [
       "Risk monitoring",
       "Trade history export",
     ],
-    image: "/images/projects/Trading/trading_1.jpg",
+    image: "/images/projects/trading.jpg",
     demoUrl: "https://stocksharp.com/",
     githubUrl: "https://github.com/tshingen01/market_intel_platform",
     category: "blockchain"
@@ -183,82 +252,10 @@ export const projects: Project[] = [
       "Connect with Popular Exchanges",
       "Crypto Wiki Chatbot"
     ],
-    image: "/images/projects/Market-Intel/market_intel_1.jpg",
+    image: "/images/projects/market_intel.jpg",
     demoUrl: "https://nmaroulis.github.io/sibyl/index.html",
     githubUrl: "https://github.com/tshingen01/market_intel_platform",
     category: "ai"
-  },
-  {
-    id: "sprout-hris-payroll",
-    title: "Sprout HRIS & Payroll Management Platform",
-    description:
-      "Beginner-friendly Python tool to manage and analyze student marks using CSV and pandas.",
-    longDescription:
-      "This project focused on improving Sprout's cloud-based HR Information System (HRIS) and Payroll Management platform for hybrid and remote work environments across Philippine enterprises. The platform centralized, so as a junior full-stack developer, I assisted in frontend module implementation, backend API integration, bug fixing, reporting features, and mobile-responsive improvements.",
-    technologies: [
-      "React.js",
-      "Express.js",
-      "PostgreSQL",
-      "Jira",
-      "TypeScript",
-      "HTML5",
-      "CSS3",
-      "Material UI",
-      "Node.js",
-      "REST APIs",
-      "PHP legacy modules",
-      "Postman",
-      "AWS EC2",
-      "AWS RDS",
-      "Nginx",
-    ],
-    features: [
-      "employee management",
-      "payroll processing",
-      "attendance tracking",
-      "leave management",
-      "government compliance",
-      "mobile self-service tools"
-    ],
-    image: "/images/projects/Sprout-HRIS-Payroll/sprout_hris_payroll_1.jpg",
-    demoUrl: "https://www.sprout.ph/hris-payroll",
-    githubUrl: "https://github.com/tshingen01/student-result-analyzer",
-    category: "web"
-  },
-  {
-    id: "sprout-recruitment-performance",
-    title: "Sprout Recruitment & Performance+ Platform",
-    description:
-      "The platform was designed for HR teams managing remote and hybrid hiring operations.",
-    longDescription:
-      "This project focused on Sprout's talent acquisition and employee performance ecosystem, including recruitment workflows, applicant tracking, performance management, and employee engagement.",
-    technologies: [
-      "React.js",
-      "Express.js",
-      "PostgreSQL",
-      "Zoom API",
-      "TypeScript",
-      "Redux",
-      "SCSS",
-      "GraphQL APIs",
-      "Node.js",
-      "Redis cache",
-      "SendGrid",
-      "Google Calendar API",
-      "Docker",
-      "GitLab CI/CD",
-    ],
-    features: [
-      "Applicant Tracking System (ATS)",
-      "Recruitment Portal",
-      "Performance+ System",
-      "Employee Engagement",
-      "Analytics",
-    ],
-    image: "/images/projects/Sprout-RP/sr_perform_1.jpg",
-    demoUrl: "https://www.sprout.ph/recruitment-performance",
-    githubUrl: "https://github.com/tshingen01/recruitment",
-    category: "web"
   },
   {
     id: "banking-mobile-app",
@@ -284,7 +281,7 @@ export const projects: Project[] = [
       "Payment Integrations",
       "Admin Dashboard",
     ],
-    image: "/images/projects/Banking/banking_platform_1.jpg",
+    image: "/images/projects/banking_platform.jpg",
     demoUrl: "https://exist.com/digital-banking-and-fintech",
     githubUrl: "https://github.com/tshingen01/digital-banking-and-fintech",
     category: "mobile"
@@ -310,36 +307,10 @@ export const projects: Project[] = [
       "Hospital Operations",
       "Notifications",
     ],
-    image: "/images/projects/Healthcare/healthcare_1.jpg",
+    image: "/images/projects/healthcare.jpg",
     demoUrl: "https://exist.com/healthcare",
     githubUrl: "https://github.com/tshingen01/emr-healthcare",
     category: "mobile"
-  },
-  {
-    id: "enterprise-web-app",
-    title: "Enterprise Data Analytics & Executive Dashboard System",
-    description:
-      "The platform aggregated enterprise data from multiple systems into a single analytics portal. It provided customizable dashboards, real-time reporting, and data visualization tools for executives and business users.",
-    longDescription:
-      "The system was designed to integrate with various data sources while ensuring security and scalability for large enterprises. It featured role-based access controls, interactive visualizations, and AI-driven insights to help businesses make data-informed decisions. The architecture was built to handle high data volumes while delivering a responsive user experience.",
-    technologies: [
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "D3.js",
-      "Highcharts",
-      "Tailwind CSS"
-    ],
-    features: [
-      "Executive Dashboard",
-      "Data Visualization",
-      "Enterprise Reporting",
-      "User Management",
-    ],
-    image: "/images/projects/Enterprise/enterprise_1.jpg",
-    demoUrl: "https://exist.com/data-solutions",
-    githubUrl: "https://github.com/tshingen01/data-solutions",
-    category: "web"
   },
   {
     id: "logistics-web-portal",
@@ -371,32 +342,235 @@ export const projects: Project[] = [
     category: "web"
   },
   {
-    id: "employee-web-portal",
-    title: "Employee Self-Service Portal",
+    id: "shoptoli",
+    title: "Shoptoli WooCommerce Multivendor Store",
     description:
-      "An HR self-service web portal for employees to view payslips, submit leave requests, and track attendance.",
+      "Shoptoli is a modern multivendor e-commerce marketplace rebuilt and optimized on WordPress + WooCommerce in 2026.",
     longDescription:
-      "As a junior developer, I  typically worked on front-end pages, form validation, and integration with backend APIs. The portal allowed employees to access their HR information, submit requests, and view company announcements. It was designed to integrate with existing HR systems while providing a user-friendly interface for employees and HR administrators.",
+      "The project focused on improving performance, navigation, conversion optimization, and marketplace scalability.The development team redesigned the WooCommerce architecture using a custom WordPress theme implementation and multiple advanced WooCommerce extensions. The goal was to transform Shoptoli into a faster and more conversion-focused WooCommerce marketplace with Better product filtering, Improved mobile UX, Faster product browsing, Vendor marketplace functionality, and Optimized checkout flow. The project also addressed common WooCommerce issues such as plugin overload, navigation complexity, and slow product search.",
     technologies: [
-      "React.js",
-      "Material UI",
+      "WordPress",
+      "WooCommerce",
+      "Shop Mania",
+      "PHP",
+      "HTML5",
       "JavaScript",
-      "Node.js",
-      "Express.js",
-      "PostgreSQL",
-      "Docker",
-      "Git/GitHub",
-      "Postman",
+      "Custom CSS",
+      "WCFM Multivendor",
     ],
     features: [
-      "Employee profile dashboard",
-      "Leave request submission and approval workflow",
-      "Payslip download portal",
-      "Attendance and work schedule tracking",
-      "Admin panel for HR staff",
-      "Email notifications for leave and payroll updates",
+      "WooCommerce multivendor marketplace",
+      "Advanced AJAX product search",
+      "Product comparison system",
+      "Wishlist functionality",
+      "Product variation swatches",
+      "Optimized cart experience",
+      "Mobile-first responsive design",
+      "Vendor management",
+      "Conversion-focused UI",
+      "Performance optimization",
+      "Modern WooCommerce theme customization",
     ],
-    image: "/images/projects/Employee/employee_1.png",
+    image: "/images/projects/shoptoli.jpg",
+    demoUrl: "https://shoptoli.in/",
     category: "web"
   },
+
+  /*
+  {
+      id: "unique-id",
+      title: "",
+      description:
+        "",
+      longDescription:
+        "",
+      technologies: [
+        "",
+      ],
+      features: [
+        "",
+      ],
+      image: "",
+      category: "web"
+    },
+    */
+  {
+    id: "corporate-website-customer-portal",
+    title: "Corporate Website & Customer Portal",
+    description:
+      "A responsive website with customer self-service capabilities, inquiry management, and content administration.",
+    longDescription:
+      "Corporate Website / Customer Portal",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "PHP",
+      "MySQL",
+      "Bootstrap",
+    ],
+    features: [
+      "Responsive design",
+      "Customer accounts",
+      "Contact management",
+      "News publishing",
+      "Content management",
+      "SEO optimization",
+    ],
+    image: "/images/projects/corporate_website_cp.jpg",
+    demoUrl: "https://logoipsum.com/",
+    category: "web"
+  },
+  {
+    id: "cooperative-management-portal",
+    title: "Cooperative Management Portal",
+    description:
+      "A web-based system used to manage cooperative membership records, payments, reports, and operational workflows.",
+    longDescription:
+      "Business Management",
+    technologies: [
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "Bootstrap",
+      "AJAX"
+    ],
+    features: [
+      "Member registration",
+      "Payment tracking",
+      "Loan management",
+      "Report generation",
+      "Role-based access control",
+      "Audit logs"
+    ],
+    image: "/images/projects/cooperative_mp.jpg",
+    demoUrl: "https://coopsolve.com/",
+    category: "web"
+  },
+  {
+    id: "school-learning-management-system",
+    title: "School Learning Management System",
+    description:
+      "A browser-based learning platform allowing students and instructors to manage courses, assignments, quizzes, and learning materials.",
+    longDescription:
+      "Education Technology",
+    technologies: [
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "Apache"
+    ],
+    features: [
+      "Student registration",
+      "Course management",
+      "Assignment submission",
+      "Quiz system",
+      "Progress tracking",
+      "Admin dashboard",
+      "Reporting tools"
+    ],
+    image: "/images/projects/school_lms.jpg",
+    demoUrl: "https://www.edtech.com/",
+    category: "web"
+  },
+  {
+    id: "customer-inquiry-classification",
+    title: "Customer Inquiry Classification System",
+    description:
+      "Experimental machine-learning project used to classify incoming customer inquiries into predefined categories.",
+    longDescription:
+      "",
+    technologies: [
+      "Python",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Jupyter Notebook"
+    ],
+    features: [
+      "Text preprocessing",
+      "Keyword extraction",
+      "Category prediction",
+      "Reporting dashboard",
+      "Training dataset evaluation"
+    ],
+    image: "/images/projects/customer_inquiry_classification.png",
+    category: "ai"
+  },
+  {
+    id: "project-management-portal",
+    title: "Project Management Portal",
+    description:
+      "Internal project tracking and team collaboration system used to manage tasks, project milestones, and employee reporting.",
+    longDescription:
+      "",
+    technologies: [
+      "PHP",
+      "MySQL",
+      "HTML5",
+      "JavaScript",
+      "Bootstrap",
+      "Git",
+    ],
+    features: [
+      "User authentication",
+      "Project dashboard",
+      "Task assignment",
+      "Status monitoring",
+      "Activity logs",
+      "Report generation",
+    ],
+    image: "/images/projects/pm_portal.png",
+    category: "web"
+  },
+  {
+    id: "field-employee-attendance",
+    title: "Field Employee Attendance Mobile App",
+    description:
+      "Android-based application designed for attendance tracking and field workforce monitoring.",
+    longDescription:
+      "",
+    technologies: [
+      "Java",
+      "Android Studio",
+      "SQLite",
+      "REST API",
+      "Google Maps API",
+    ],
+    features: [
+      "Login system",
+      "GPS location capture",
+      "Attendance check-in/check-out",
+      "Offline data storage",
+      "Synchronization with server",
+    ],
+    image: "/images/projects/field_employee_attendance.png",
+    category: "mobile"
+  },
+  {
+    id: "asset-verification",
+    title: "Blockchain Asset Verification Prototype",
+    description:
+      "Proof-of-concept application exploring blockchain technology for document verification and ownership tracking.",
+    longDescription:
+      "Research-oriented prototype rather than production deployment.",
+    technologies: [
+      "Ethereum fundamentals",
+      "JavaScript",
+      "Node.js",
+      "JSON-RPC",
+      "Cryptographic Hashing",
+    ],
+    features: [
+      "Document fingerprint generation",
+      "Ownership verification",
+      "Immutable audit trail",
+      "Transaction history visualization",
+    ],
+    image: "/images/projects/asset_verification.png",
+    category: "blockchain"
+  },
 ];
+

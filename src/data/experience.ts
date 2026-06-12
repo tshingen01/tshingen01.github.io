@@ -12,41 +12,30 @@ export type Experience = {
 
 export const experienceData: Experience[] = [
   {
-    id: "freelance-fullstack",
-    company: "Freelancer",
+    id: "nextsprinttech-fullstack",
+    company: "NextSprintTech",
     role: "Senior Full-Stack Developer",
-    duration: "Feb 2026 - now",
-    location: "Remote",
-    description:
-      "I work as a freelance full-stack developer, collaborating with clients worldwide to deliver web, AI, and blockchain solutions.",
-    achievements: [
-      "Develop web, AI, and blockchain solutions for international clients.",
-      "Design scalable cloud architectures and full-stack applications.",
-      "Lead technical planning and system design for startup and enterprise projects.",
-      "Recently E-commerce, fintech, and SaaS development with a focus on performance, security, and user experience."
-    ],
-    technologies: [],
-    type: "full-time"
-  },
-  {
-    id: "sprout-solutions-fullstack",
-    company: "Sprout Solutions",
-    role: "Senior Full-Stack Developer",
-    duration: "Jan 2024 - Feb 2026",
-    location: "Makati City, Metro Manila, Philippines · Remote",
+    duration: "February 2023 - February 2026",
+    location: "San Francisco, California, United States · Remote",
     description:
       "",
     achievements: [
-      "Led development of HR and payroll platform features.",
-      "Designed scalable backend services and modern frontend applications.",
-      "Mentored junior developers and participated in architecture decisions.",
-      "Worked in a hybrid/remote environment serving thousands of business users."
+      "Led architecture and development of large-scale SaaS and HealthTech platforms.",
+      "Designed full-stack solutions across frontend, backend, databases, and cloud infrastructure.",
+      "Integrated AI/ML capabilities into healthcare and biotech products.",
+      "Collaborated with product managers, researchers, clinicians, and UX teams.",
+      "Mentored junior and mid-level developers.",
+      "Conducted performance audits and codebase modernization initiatives.",
+      "Built secure HIPAA-compliant healthcare applications.",
+      "Implemented CI/CD and cloud deployment pipelines.",
+      "Led technical design reviews and architectural decisions.",
+      "Optimized platform scalability, reliability, and maintainability."
     ],
     technologies: [
-      "Agile Environment",
-      "Team Support",
-      "Bug Fixing & Maintenance",
-      "Documentation"
+      "Next.js",
+      "Python",
+      "PostgreSQL",
+      "LangChain"
     ],
     type: "full-time"
   },
@@ -54,7 +43,7 @@ export const experienceData: Experience[] = [
     id: "coins-senior-fullstack",
     company: "Coins.ph",
     role: "Full-Stack Developer",
-    duration: "Aug 2022 - Nov 2023",
+    duration: "September 2021 - September 2022",
     location: "Taguig City, Metro Manila, Philippines · Remote",
     description:
       "Worked as a Full-Stack Developer helping both building robust fintech products and ensuring their secure, scalable operation, while mentoring teams and integrating cutting-edge blockchain functionality.",
@@ -74,53 +63,56 @@ export const experienceData: Experience[] = [
     type: "full-time"
   },
   {
-    id: "esl-frontend",
+    id: "esl-web-developer",
     company: "Exist Software Labs",
-    role: "Frontend Developer",
-    duration: "Mar 2020 - May 2022",
+    role: "Web Developer",
+    duration: "August 2020 - August 2021",
     location: "Pasig City, Metro Manila, Philippines · Remote",
     description:
       "Worked on enterprise web applications, digital transformation projects, cloud systems, and custom software solutions for local and international clients.",
     achievements: [
-      "Developed responsive and interactive user interfaces for enterprise and SaaS platforms.",
-      "Implemented effective community engagement strategies and learning initiatives",
-      "Built reusable UI components and optimized frontend architecture.",
+      "Developed responsive web interfaces using Angular and Bootstrap.",
+      "Created REST API endpoints using Spring Boot.",
+      "Developed customer onboarding workflows.",
+      "Optimized SQL queries and database indexes.",
+      "Assisted DevOps teams during deployments.",
+      "Implemented audit logging and transaction tracking.",
     ],
     technologies: ["React.js", "Angular", "Vue.js", "TypeScript", "Tailwind CSS", "Material UI"],
     type: "full-time"
   },
   {
-    id: "IOL-web-developer",
+    id: "IOL-junior-web-developer",
     company: "IOL Inc.",
-    role: "Web Developer",
-    duration: "Jan 2019 - Feb 2020",
+    role: "Junior Web Developer",
+    duration: "June 2018 - June 2020",
     location: "Baguio City, Benguet, Philippines",
     description:
       "I involved supporting client projects by building and maintaining web applications while learning from more experienced developers.",
     achievements: [
-      "Developed internal business portals and client-facing web applications.",
-      "Implemented responsive layouts and interactive UI features.",
-      "Collaborated with backend developers and UI/UX designers in Agile teams.",
-      "Improved application performance and browser compatibility."
+      "Developed and maintained responsive web applications.",
+      "Implemented frontend interfaces from UI/UX designs.",
+      "Assisted backend developers in API integration.",
+      "Created and optimized database-driven features.",
+      "Performed website testing and bug fixing.",
     ],
-    technologies: ["Laravel", "PHP", "MySQL", "Jira/Trello", "basic CI/CD"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap", "AJAX", "Jira/Trello", "basic CI/CD"],
     type: "full-time"
   },
   {
     id: "linkage-frontend-developer-intern",
     company: "Linkage",
-    role: "Frontend Developer Intern",
-    duration: "Jun 2017 - Feb 2018",
+    role: "Software Developer Intern",
+    duration: "July 20, 2017 - February 20, 2018",
     location: "Baguio City, Benguet, Philippines",
     description:
-      "Shadowed senior developers to understand frontend workflows.",
+      "Shadowed senior developers to understand web development workflows.",
     achievements: [
-      "Assisted in building web pages using HTML, CSS, and JavaScript.",
-      "Converted UI/UX designs from Figma, Sketch, or Photoshop into functional web interfaces.",
-      "Implemented responsive layouts for desktop and mobile devices.",
-      "Applied basic interactivity with JavaScript and jQuery."
+      "Assisted in designing, developing, and maintaining web and mobile applications under supervision.",
+      "Participated in code reviews and testing to ensure quality and performance of applications.",
+      "Conducted research and prototyping for emerging technologies, including blockchain, dApps, and DeFi concepts."
     ],
-    technologies: ["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap", "Git/GitHub"],
+    technologies: ["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap", "Git/GitHub", "dApps", "NFTs", "DeFi concepts"],
     type: "internship"
   }
 ];
