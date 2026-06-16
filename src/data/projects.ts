@@ -338,7 +338,7 @@ export const projects: Project[] = [
       "Exportable reports",
       "Admin access with role-based permissions",
     ],
-    image: "/images/projects/Logistics/logistics_1.jpg",
+    image: "/images/projects/logistics.jpg",
     category: "web"
   },
   {
