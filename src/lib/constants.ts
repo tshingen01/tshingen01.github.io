@@ -9,7 +9,7 @@ export const SITE_CONFIG = {
   links: {
     email: "tshingen0821@gmail.com",
     github: "https://github.com/tshingen01",
-    telegram: "https://t.me/tshingen01",
+    telegram: "https://t.me/yy339622",
     leetcode: "https://leetcode.com/tshingen01",
     linkedin: "https://www.linkedin.com/in/mark-kinsley-rimando-9b1a4b1b2/",
     hackerrank: "https://www.hackerrank.com/profile/tshingen821",
