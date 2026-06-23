@@ -8,7 +8,7 @@ import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { NAV_ITEMS } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 export function Navbar() {
@@ -66,7 +66,7 @@ export function Navbar() {
             />
           </div>
 
-          <div className="relative flex items-center justify-between">
+          <div className="relative flex items-center">
             <Link
               href="/"
               onClick={() => setOpen(false)}
@@ -77,7 +77,7 @@ export function Navbar() {
               </span>
             </Link>
 
-            <div className="hidden md:flex gap-1">
+            <div className="hidden md:flex items-center justify-center flex-1 mr-20">
               {NAV_ITEMS.map((item) => {
                 const active = pathname === item.href;
                 return (
@@ -115,26 +115,7 @@ export function Navbar() {
               })}
             </div>
 
-            <div className="hidden md:flex items-center">
-              <a
-                href="/resume/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button
-                    size="sm"
-                    variant="default"
-                    className="rounded-xl font-semibold shadow-md relative overflow-hidden group"
-                  >
-                    <span className="relative z-10">Resume</span>
-                    <div className="absolute inset-0 bg-gradient-to-r from-primary via-teal-light to-primary bg-[length:200%_100%] opacity-0 group-hover:opacity-100 group-hover:animate-[gradient-shift_2s_ease_infinite] transition-opacity duration-300" />
-                  </Button>
-                </motion.div>
-              </a>
-            </div>
-
-            <div className="flex md:hidden">
+            <div className="flex md:hidden flex-1 justify-end">
               <Sheet open={open} onOpenChange={setOpen}>
                 <SheetTrigger asChild>
                   <Button
@@ -161,12 +142,11 @@ export function Navbar() {
                         onClick={() => setOpen(false)}
                         className="font-display text-2xl font-bold"
                       >
-                        <span className="gradient-text">
+                        <SheetTitle>
                           Mark Kinsley Rimando
-                        </span>
+                        </SheetTitle>
                       </Link>
                     </div>
-
                     <div className="flex-1 px-6 py-6 flex flex-col gap-2">
                       {NAV_ITEMS.map((item, index) => (
                         <motion.div
@@ -190,21 +170,6 @@ export function Navbar() {
                           </Link>
                         </motion.div>
                       ))}
-                    </div>
-
-                    <div className="px-6 pb-6">
-                      <a
-                        href="/resume/resume.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button
-                          size="lg"
-                          className="w-full rounded-xl font-semibold shadow-md"
-                        >
-                          Resume
-                        </Button>
-                      </a>
                     </div>
                   </div>
                 </SheetContent>
