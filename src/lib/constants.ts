@@ -13,7 +13,7 @@ export const SITE_CONFIG = {
     leetcode: "https://leetcode.com/tshingen01",
     linkedin: "https://www.linkedin.com/in/mark-kinsley-rimando-9b1a4b1b2/",
     hackerrank: "https://www.hackerrank.com/profile/tshingen821",
-    devTo: "https://dev.to/tshingen01",
+    devTo: "https://dev.to/yy339622",
     stackOverflow: "https://stackoverflow.com/users/32788228/tshingen01",
   }
 };
