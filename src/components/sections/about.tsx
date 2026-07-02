@@ -42,24 +42,20 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="space-y-6 text-lg leading-relaxed">
               <p>
-                I am a Senior Full-Stack Developer with over 9 years of professional experience designing, developing, and deploying scalable web applications and enterprise-grade software solutions.
+                I am a Senior Full-Stack Developer with over 9 years of experience building web applications and software solutions for businesses.
               </p>
               <p>
-                My expertise spans both frontend and backend technologies, enabling me to deliver robust, high-performance applications from concept to production.
-              </p>
-
-              <p>
-                Throughout my career, I have worked extensively with modern JavaScript frameworks, cloud platforms, RESTful APIs, database architecture, and microservices-based systems.
-              </p>
-              <p>
-                I am passionate about writing clean, maintainable code and building user-centric products that solve real business challenges.
+                I work across both frontend and backend development, taking projects from planning and development to deployment and maintenance. My experience includes modern JavaScript frameworks, backend development, RESTful APIs, cloud platforms, databases, and microservices.
               </p>
 
               <p>
-                In addition to my core full-stack development expertise, I possess strong experience in Blockchain and Artificial Intelligence technologies. These advanced technologies allow me to bring innovative, future-ready solutions to complex projects.
+                I enjoy writing clean, maintainable code and building reliable applications that provide a great user experience and solve real business problems.
               </p>
               <p>
-                I thrive in collaborative environments, enjoy tackling challenging technical problems, and continuously stay up to date with emerging technologies to deliver cutting-edge digital experiences.
+                In addition to full-stack development, I have hands-on experience with Blockchain and Artificial Intelligence (AI). I use these technologies when they are the right fit to create innovative and scalable solutions.
+              </p>
+              <p>
+                I enjoy working with teams, solving challenging technical problems, and continuously learning new technologies to improve my skills and deliver high-quality software.
               </p>
             </div>
 

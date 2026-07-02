@@ -149,7 +149,7 @@ export function Projects() {
                       )}
                     </div>
 
-                    <div className="flex gap-3 pt-4 border-t border-border/50">
+                    <div className="grid grid-cols-2 gap-3 pt-4 border-t border-border/50">
                       {project.demoUrl && (
                         <a
                           href={project.demoUrl}
@@ -166,7 +166,7 @@ export function Projects() {
                           href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                          className="flex justify-end items-center gap-1.5 text-sm font-medium text-primary hover:underline"
                         >
                           <Github className="h-4 w-4" />
                           Source Code

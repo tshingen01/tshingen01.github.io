@@ -3,11 +3,23 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
-import { FaGithub, FaTelegram, FaHackerrank, FaStackOverflow  } from "react-icons/fa";
+import { FaGithub, FaTelegram, FaHackerrank, FaStackOverflow, FaLinkedinIn  } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { BiLogoDevTo } from "react-icons/bi";
 import { SITE_CONFIG, NAV_ITEMS } from "@/lib/constants";
 const socialLinks = [
+  {
+    icon: Mail,
+    href: `mailto:${SITE_CONFIG.links.email}`,
+    label: "Email",
+    color: "rgba(78, 205, 196, 0.2)",
+  },
+  {
+    icon: FaLinkedinIn,
+    href: SITE_CONFIG.links.linkedin,
+    label: "LinkedIn",
+    color: "rgba(78, 205, 196, 0.2)",
+  },
   {
     icon: FaGithub,
     href: SITE_CONFIG.links.github,
@@ -149,16 +161,6 @@ export function Footer() {
               className="space-y-3"
             >
               <h3 className="font-semibold">Connect</h3>
-              <div className="flex flex-col space-y-2">
-                <a
-                  href={`mailto:${SITE_CONFIG.links.email}`}
-                  className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-all duration-300 group"
-                >
-                  <Mail className="h-4 w-4 group-hover:scale-110 transition-transform" />
-                  <span>Email</span>
-                </a>
-              </div>
-
               <div className="flex space-x-3 pt-2">
                 {socialLinks.map((social) => {
                   const Icon = social.icon;
