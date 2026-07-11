@@ -78,8 +78,8 @@ export const projects: Project[] = [
       "Payment confirmation notifications",
     ],
     image: "/images/projects/qrph.jpg",
-    demoUrl: "https://www.coins.ph/en-ph?utm_source",
-    githubUrl: "https://github.com/tshingen01/crypto-qrpn", // ###
+    // demoUrl: "https://www.coins.ph/en-ph?utm_source",
+    // githubUrl: "https://github.com/tshingen01/crypto-qrpn", // ###
     category: "blockchain"
   },
   {
@@ -221,8 +221,8 @@ export const projects: Project[] = [
       "Trade history export",
     ],
     image: "/images/projects/trading.jpg",
-    demoUrl: "https://stocksharp.com/",
-    githubUrl: "https://github.com/tshingen01/market_intel_platform",
+    // demoUrl: "https://stocksharp.com/",
+    // githubUrl: "https://github.com/tshingen01/market_intel_platform",
     category: "blockchain"
   },
   {
@@ -253,8 +253,8 @@ export const projects: Project[] = [
       "Crypto Wiki Chatbot"
     ],
     image: "/images/projects/market_intel.jpg",
-    demoUrl: "https://nmaroulis.github.io/sibyl/index.html",
-    githubUrl: "https://github.com/tshingen01/market_intel_platform",
+    // demoUrl: "https://nmaroulis.github.io/sibyl/index.html",
+    // githubUrl: "https://github.com/tshingen01/market_intel_platform",
     category: "ai"
   },
   {
@@ -282,8 +282,8 @@ export const projects: Project[] = [
       "Admin Dashboard",
     ],
     image: "/images/projects/banking_platform.jpg",
-    demoUrl: "https://exist.com/digital-banking-and-fintech",
-    githubUrl: "https://github.com/tshingen01/digital-banking-and-fintech",
+    // demoUrl: "https://exist.com/digital-banking-and-fintech",
+    // githubUrl: "https://github.com/tshingen01/digital-banking-and-fintech",
     category: "mobile"
   },
   {
@@ -308,8 +308,8 @@ export const projects: Project[] = [
       "Notifications",
     ],
     image: "/images/projects/healthcare.jpg",
-    demoUrl: "https://exist.com/healthcare",
-    githubUrl: "https://github.com/tshingen01/emr-healthcare",
+    // demoUrl: "https://exist.com/healthcare",
+    // githubUrl: "https://github.com/tshingen01/emr-healthcare",
     category: "mobile"
   },
   {
@@ -372,7 +372,7 @@ export const projects: Project[] = [
       "Modern WooCommerce theme customization",
     ],
     image: "/images/projects/shoptoli.jpg",
-    demoUrl: "https://shoptoli.in/",
+    // demoUrl: "https://shoptoli.in/",
     category: "web"
   },
 
@@ -418,7 +418,7 @@ export const projects: Project[] = [
       "SEO optimization",
     ],
     image: "/images/projects/corporate_website_cp.jpg",
-    demoUrl: "https://logoipsum.com/",
+    // demoUrl: "https://logoipsum.com/",
     category: "web"
   },
   {
@@ -444,7 +444,7 @@ export const projects: Project[] = [
       "Audit logs"
     ],
     image: "/images/projects/cooperative_mp.jpg",
-    demoUrl: "https://coopsolve.com/",
+    // demoUrl: "https://coopsolve.com/",
     category: "web"
   },
   {
@@ -472,7 +472,7 @@ export const projects: Project[] = [
       "Reporting tools"
     ],
     image: "/images/projects/school_lms.jpg",
-    demoUrl: "https://www.edtech.com/",
+    // demoUrl: "https://www.edtech.com/",
     category: "web"
   },
   {
