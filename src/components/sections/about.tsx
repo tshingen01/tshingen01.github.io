@@ -61,7 +61,7 @@ export function About() {
 
             <div className="relative flex flex-col items-center">
               <div className="absolute -top-24">
-                <div className="relative w-75 h-75 rounded-full p-[4px] border-2 border-sky-800 shadow-lg">
+                <div className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px] rounded-full p-[5px] border border-border/60 bg-background/80 shadow-[0_0_35px_rgba(15,23,42,0.08)] dark:shadow-[0_0_35px_rgba(0,0,0,0.25)] backdrop-blur-sm">
                   <div className="rounded-full overflow-hidden w-full h-full relative">
                     <Image
                       src="/me/me.png"
@@ -85,7 +85,7 @@ export function About() {
                     viewport={{ once: true }}
                     variants={ANIMATION_VARIANTS.fadeUp}
                     transition={{ delay: index * 0.1 }}
-                    className="p-6 rounded-lg border bg-card hover:shadow-lg transition-shadow"
+                    className="p-6 rounded-2xl border border-border/60 bg-card/80 hover:shadow-[0_10px_30px_rgba(15,23,42,0.08)] dark:hover:shadow-[0_10px_30px_rgba(0,0,0,0.2)] transition-all duration-300 backdrop-blur-sm"
                   >
                     <div className="flex items-start space-x-4">
                       <div className="p-3 rounded-full bg-primary/10 text-primary">

@@ -17,7 +17,7 @@ function OrbitingShapes() {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[800px] md:h-[800px]">
-        <div className="w-full h-full rounded-full border border-white/[0.03] animate-spin-slow" />
+        <div className="w-full h-full rounded-full border border-border/30 dark:border-white/[0.03] animate-spin-slow" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <div className="w-2 h-2 rounded-full bg-teal/60 shadow-[0_0_15px_rgba(78,205,196,0.5)]" />
         </div>
@@ -27,7 +27,7 @@ function OrbitingShapes() {
       </div>
 
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] md:w-[550px] md:h-[550px]">
-        <div className="w-full h-full rounded-full border border-white/[0.02] animate-spin-reverse" />
+        <div className="w-full h-full rounded-full border border-border/20 dark:border-white/[0.02] animate-spin-reverse" />
         <div className="absolute top-1/2 right-0 translate-x-1/2 -translate-y-1/2">
           <div className="w-2.5 h-2.5 rounded-full bg-teal/40 shadow-[0_0_20px_rgba(78,205,196,0.4)]" />
         </div>
@@ -187,7 +187,7 @@ export function Hero() {
         }}
       />
 
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,rgba(0,0,0,0.4)_100%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.45)_0%,transparent_70%)] dark:bg-[radial-gradient(circle_at_center,transparent_30%,rgba(0,0,0,0.4)_100%)] pointer-events-none" />
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <motion.div
@@ -229,7 +229,7 @@ export function Hero() {
             className="flex flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0"
           >
             <MagneticButton>
-              <Button asChild size="lg" className="text-sm sm:text-base px-4 sm:px-8 relative overflow-hidden group">
+              <Button asChild size="lg" className="text-sm sm:text-base px-4 sm:px-8 relative overflow-hidden group rounded-full border border-primary/20 bg-primary/10 text-primary shadow-[0_8px_30px_rgba(78,205,196,0.12)] hover:bg-primary/20 transition-all">
                 <Link href="/projects">
                   <span className="relative z-10">View Projects</span>
                   <motion.div
@@ -246,7 +246,7 @@ export function Hero() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="text-sm sm:text-base px-4 sm:px-8 border-white/10 hover:bg-white/5 hover:border-white/20 transition-all"
+                className="text-sm sm:text-base px-4 sm:px-8 rounded-full border border-border/60 bg-background/70 text-foreground shadow-sm hover:bg-primary/10 hover:border-primary/30 transition-all"
               >
                 <Link href="/about">About Me</Link>
               </Button>

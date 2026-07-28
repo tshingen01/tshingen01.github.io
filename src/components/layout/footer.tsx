@@ -95,7 +95,7 @@ export function Footer() {
         </div>
       </div>
 
-      <footer className="relative mt-0 border-t border-white/5 bg-background overflow-hidden">
+      <footer className="relative mt-0 border-t border-border/60 bg-background/90 overflow-hidden shadow-[0_-10px_30px_rgba(15,23,42,0.04)] dark:shadow-[0_-10px_30px_rgba(0,0,0,0.15)]">
         <div className="absolute inset-0 pointer-events-none">
           <div
             className="absolute w-[600px] h-[600px] rounded-full opacity-[0.03]"
@@ -139,7 +139,7 @@ export function Footer() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="space-y-3"
             >
-              <h3 className="font-semibold">Quick Links</h3>
+              <h3 className="font-semibold text-foreground">Quick Links</h3>
               <nav className="flex flex-col space-y-2">
                 {NAV_ITEMS.map((item) => (
                   <Link
@@ -160,7 +160,7 @@ export function Footer() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="space-y-3"
             >
-              <h3 className="font-semibold">Connect</h3>
+              <h3 className="font-semibold text-foreground">Connect</h3>
               <div className="flex space-x-3 pt-2">
                 {socialLinks.map((social) => {
                   const Icon = social.icon;
@@ -170,7 +170,7 @@ export function Footer() {
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="relative w-10 h-10 rounded-full flex items-center justify-center border border-white/10 text-muted-foreground hover:text-primary transition-all duration-300 overflow-hidden group"
+                      className="relative w-10 h-10 rounded-full flex items-center justify-center border border-border/60 bg-background/70 text-muted-foreground hover:text-primary hover:border-primary/30 transition-all duration-300 overflow-hidden group shadow-sm"
                       whileHover={{ scale: 1.15, rotate: 5 }}
                       whileTap={{ scale: 0.95 }}
                       aria-label={social.label}
@@ -192,7 +192,7 @@ export function Footer() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-10 border-t border-white/5 pt-8 text-center"
+            className="mt-10 border-t border-border/60 pt-8 text-center"
           >
             <p className="text-sm text-muted-foreground">
               © {currentYear} {SITE_CONFIG.name}. All rights reserved.

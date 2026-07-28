@@ -74,7 +74,7 @@ export function SkillsShowcase() {
 
   return (
     <div ref={containerRef} className="relative h-[200vh]">
-      <div className="sticky top-0 h-screen w-full flex flex-col items-center justify-center bg-black text-white overflow-hidden py-12 px-6">
+      <div className="sticky top-0 h-screen w-full flex flex-col items-center justify-center bg-background text-foreground overflow-hidden py-12 px-6">
         <ShootingStars />
         <StarsBackground />
 
@@ -99,7 +99,7 @@ export function SkillsShowcase() {
           />
         </div>
 
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.7),transparent_85%)] pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.45),transparent_85%)] dark:bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.7),transparent_85%)] pointer-events-none" />
 
         <motion.div
           initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
@@ -111,7 +111,7 @@ export function SkillsShowcase() {
           <h2 className="text-5xl md:text-6xl font-extrabold mb-3 tracking-tight gradient-text">
             Core Skills
           </h2>
-          <p className="text-gray-400 text-lg font-light">
+          <p className="text-muted-foreground text-lg font-light">
             Tools and technologies I work with daily
           </p>
         </motion.div>
@@ -169,8 +169,8 @@ export function SkillsShowcase() {
           </LayoutGroup>
         </div>
 
-        <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black via-transparent to-transparent pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-black via-transparent to-transparent pointer-events-none" />
+        <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-background via-transparent to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-background via-transparent to-transparent pointer-events-none" />
       </div>
     </div>
   );
@@ -189,7 +189,7 @@ function SkillIcon({ skill }: { skill: Skill }) {
         <div className="relative z-10">
           {imgError ? (
             <div className="w-16 h-16 flex items-center justify-center bg-gray-800 rounded-full">
-              <span className="text-xs text-white text-center px-1">
+              <span className="text-xs text-foreground text-center px-1">
                 {skill.name}
               </span>
             </div>
@@ -207,7 +207,7 @@ function SkillIcon({ skill }: { skill: Skill }) {
         </div>
       </div>
 
-      <span className="mt-2 text-sm text-gray-400 group-hover:text-primary transition-colors duration-300 whitespace-nowrap">
+      <span className="mt-2 text-sm text-muted-foreground group-hover:text-primary transition-colors duration-300 whitespace-nowrap">
         {skill.name}
       </span>
     </div>

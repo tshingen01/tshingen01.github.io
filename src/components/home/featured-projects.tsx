@@ -79,10 +79,10 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               animation: "spin-slow 4s linear infinite",
             }}
           />
-          <div className="absolute inset-[1px] rounded-2xl bg-zinc-950" />
+          <div className="absolute inset-[1px] rounded-2xl bg-background/90" />
         </div>
 
-        <Card className="relative z-10 h-full rounded-2xl border border-zinc-800/80 bg-zinc-950/80 text-white shadow-[0_18px_45px_rgba(0,0,0,0.7)] backdrop-blur-md overflow-hidden transition-all duration-500 group-hover:shadow-[0_25px_60px_rgba(78,205,196,0.15)]">
+        <Card className="relative z-10 h-full rounded-2xl border border-border/70 bg-card/80 text-card-foreground shadow-[0_18px_45px_rgba(15,23,42,0.08)] dark:shadow-[0_18px_45px_rgba(0,0,0,0.7)] backdrop-blur-md overflow-hidden transition-all duration-500 group-hover:shadow-[0_25px_60px_rgba(78,205,196,0.15)]">
 
           {/* Cursor spotlight effect */}
           {isHovered && (
@@ -109,7 +109,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                 </Badge>
               </div>
 
-                <p className="text-xs md:text-sm text-zinc-400">
+                <p className="text-xs md:text-sm text-muted-foreground">
                   {project.description}
                 </p>
             </div>
@@ -128,7 +128,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                 >
                   <Badge
                     variant="secondary"
-                    className="border-none bg-zinc-800/80 text-[11px] font-normal text-zinc-100 hover:bg-zinc-700/80 transition-colors"
+                    className="border-none bg-muted/80 text-[11px] font-normal text-foreground hover:bg-muted transition-colors"
                   >
                     {tech}
                   </Badge>
@@ -137,14 +137,14 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               {project.technologies.length > 10 && (
                 <Badge
                   variant="outline"
-                  className="border-zinc-600/60 bg-transparent text-[11px] text-zinc-300"
+                  className="border-border/60 bg-transparent text-[11px] text-muted-foreground"
                 >
                   +{project.technologies.length - 10} more
                 </Badge>
               )}
             </div>
             <div className="flex flex-row justify-between border-t border-zinc-800/50 pt-4">
-              <ul className="space-y-1.5 flex-shrink text-xs text-zinc-300">
+              <ul className="space-y-1.5 flex-shrink text-xs text-muted-foreground">
                 {project.features.slice(0, project.features.length/2).map((feature) => (
                   <li key={project.id+"_feature-"+feature} className="flex gap-2">
                     <span className="mt-[3px] h-[3px] w-[3px] rounded-full bg-teal/60 shrink-0" />
@@ -152,7 +152,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                   </li>
                 ))}
               </ul>
-              <ul className="space-y-1.5 text-xs text-zinc-300">
+              <ul className="space-y-1.5 text-xs text-muted-foreground">
                 {project.features.slice(project.features.length/2, 10).map((feature) => (
                   <li key={project.id+"_feature-"+feature} className="flex gap-2">
                     <span className="mt-[3px] h-[3px] w-[3px] rounded-full bg-teal/60 shrink-0" />
@@ -163,7 +163,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             </div>
 
             <div className="flex items-center justify-between pt-2 text-xs text-zinc-400 border-t border-zinc-800/50">
-              <span className="font-mono truncate max-w-[40%]">
+              <span className="font-mono truncate max-w-[40%] text-muted-foreground">
                 {project.category.toUpperCase()}
               </span>
 
@@ -173,7 +173,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                     href={project.demoUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-1 text-[11px] font-medium text-zinc-100 hover:text-teal-light transition-colors group/link"
+                    className="inline-flex items-center gap-1 text-[11px] font-medium text-foreground hover:text-teal-light transition-colors group/link"
                   >
                     Live Demo
                     <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
@@ -184,7 +184,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-1 text-[11px] font-medium text-zinc-400 hover:text-zinc-100 transition-colors group/link"
+                    className="inline-flex items-center gap-1 text-[11px] font-medium text-muted-foreground hover:text-foreground transition-colors group/link"
                   >
                     Code
                     <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
@@ -205,14 +205,14 @@ export function FeaturedProjects() {
   return (
     <section
       id="projects"
-      className="relative py-24 md:py-28 bg-black text-white overflow-hidden"
+      className="relative py-24 md:py-28 bg-background text-foreground overflow-hidden"
     >
       {/* Background */}
       <ShootingStars />
       <StarsBackground />
 
       {/* Subtle radial dark glow for focus */}
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.75),transparent_80%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.45),transparent_80%)] dark:bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.75),transparent_80%)]" />
 
       {/* faint grid overlay */}
       <div className="pointer-events-none absolute inset-0 opacity-[0.03]">
@@ -243,7 +243,7 @@ export function FeaturedProjects() {
             <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight">
               Featured <span className="gradient-text">Projects</span>
             </h2>
-            <p className="mt-3 max-w-xl text-sm md:text-base text-zinc-400">
+            <p className="mt-3 max-w-xl text-sm md:text-base text-muted-foreground">
               A mix of personal projects and real-world work — each one taught me something new about building for the web.
             </p>
           </div>
@@ -253,7 +253,7 @@ export function FeaturedProjects() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="flex flex-col items-start md:items-end gap-3 text-xs md:text-sm text-zinc-400"
+            className="flex flex-col items-start md:items-end gap-3 text-xs md:text-sm text-muted-foreground"
           >
             <p className="max-w-sm text-right md:text-right">
               Every project links to a live demo or repo

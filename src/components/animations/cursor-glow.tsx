@@ -13,8 +13,18 @@ export function CursorGlow() {
 
   const [isHovering, setIsHovering] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
+    const updateTheme = () => {
+      setIsDarkMode(document.documentElement.classList.contains("dark"));
+    };
+
+    updateTheme();
+
+    const themeObserver = new MutationObserver(() => updateTheme());
+    themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+
     const handleMouseMove = (e: MouseEvent) => {
       mouseX.set(e.clientX);
       mouseY.set(e.clientY);
@@ -26,7 +36,7 @@ export function CursorGlow() {
     const handleHoverIn = () => setIsHovering(true);
     const handleHoverOut = () => setIsHovering(false);
 
-    const observer = new MutationObserver(() => {
+    const interactiveObserver = new MutationObserver(() => {
       const interactiveElements = document.querySelectorAll(
         'a, button, [role="button"], input, textarea, select, [data-cursor-hover]'
       );
@@ -38,7 +48,7 @@ export function CursorGlow() {
       });
     });
 
-    observer.observe(document.body, { childList: true, subtree: true });
+    interactiveObserver.observe(document.body, { childList: true, subtree: true });
 
     const interactiveElements = document.querySelectorAll(
       'a, button, [role="button"], input, textarea, select, [data-cursor-hover]'
@@ -50,7 +60,8 @@ export function CursorGlow() {
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      observer.disconnect();
+      themeObserver.disconnect();
+      interactiveObserver.disconnect();
     };
   }, [mouseX, mouseY, isVisible]);
 
@@ -61,7 +72,7 @@ export function CursorGlow() {
   return (
     <>
       <motion.div
-        className="fixed pointer-events-none z-[9998] hidden md:block rounded-full border border-white/30"
+        className="fixed pointer-events-none z-[9998] hidden md:block rounded-full border border-black/20 dark:border-white/30"
         style={{
           left: trailX,
           top: trailY,
@@ -69,13 +80,17 @@ export function CursorGlow() {
           translateY: "-50%",
           width: isHovering ? 48 : 24,
           height: isHovering ? 48 : 24,
-          background: isHovering ? "rgba(255, 255, 255, 0.05)" : "transparent",
+          background: isHovering
+            ? isDarkMode
+              ? "rgba(255, 255, 255, 0.05)"
+              : "rgba(15, 23, 42, 0.06)"
+            : "transparent",
           transition: "width 0.2s, height 0.2s, background 0.2s",
           opacity: isVisible ? 1 : 0,
         }}
       />
       <motion.div
-        className="fixed pointer-events-none z-[9998] hidden md:block rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.5)]"
+        className="fixed pointer-events-none z-[9998] hidden md:block rounded-full shadow-[0_0_10px_rgba(15,23,42,0.18)] dark:shadow-[0_0_10px_rgba(255,255,255,0.5)]"
         style={{
           left: mouseX,
           top: mouseY,
@@ -83,7 +98,8 @@ export function CursorGlow() {
           translateY: "-50%",
           width: isHovering ? 8 : 4,
           height: isHovering ? 8 : 4,
-          transition: "width 0.2s, height 0.2s",
+          background: isDarkMode ? "#ffffff" : "#111827",
+          transition: "width 0.2s, height 0.2s, background 0.2s",
           opacity: isVisible ? 1 : 0,
         }}
       />

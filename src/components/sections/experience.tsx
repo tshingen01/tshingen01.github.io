@@ -7,7 +7,7 @@ import { Calendar, MapPin, Building2 } from "lucide-react";
 
 export function Experience() {
   return (
-    <section className="py-20 px-4">
+    <section className="py-20 px-4 bg-background/40">
       <div className="container mx-auto max-w-4xl">
         <motion.div
           initial="hidden"
@@ -38,7 +38,7 @@ export function Experience() {
             >
               <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background" />
               
-              <div className="ml-8 md:ml-0 md:w-5/12 p-6 rounded-xl border bg-card hover:shadow-lg transition-shadow">
+              <div className="ml-8 md:ml-0 md:w-5/12 p-6 rounded-2xl border border-border/60 bg-card/80 hover:shadow-[0_10px_35px_rgba(15,23,42,0.08)] dark:hover:shadow-[0_10px_35px_rgba(0,0,0,0.2)] transition-all duration-300 backdrop-blur-sm">
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <h3 className="text-xl font-semibold">{exp.role}</h3>
@@ -75,7 +75,7 @@ export function Experience() {
                   {exp.technologies.map((tech: string) => (
                     <span
                       key={tech}
-                      className="px-3 py-1 text-xs rounded-full bg-primary/10 text-primary"
+                      className="px-3 py-1 text-xs rounded-full border border-primary/20 bg-primary/10 text-primary shadow-sm"
                     >
                       {tech}
                     </span>

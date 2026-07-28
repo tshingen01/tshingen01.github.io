@@ -33,7 +33,7 @@ export function Projects() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-muted/30">
+    <section className="py-20 px-4 bg-background/50">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial="hidden"
@@ -43,7 +43,7 @@ export function Projects() {
           className="text-center mb-12 w-full"
         >
           <h2 className=" text-4xl md:text-5xl font-display font-bold mb-4">
-            Featured <span className="gradient-text">Projects</span>
+            Featured Projects
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Here&apos;s what I&apos;ve been working on — from web apps to data tools.
@@ -63,7 +63,7 @@ export function Projects() {
               key={category.value}
               variant={selectedCategory === category.value ? "default" : "outline"}
               onClick={() => setSelectedCategory(category.value)}
-              className="transition-all"
+              className="transition-all rounded-full px-5"
             >
               {category.label}
             </Button>
@@ -88,8 +88,8 @@ export function Projects() {
                 variants={ANIMATION_VARIANTS.fadeUp}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className="flex flex-col group h-full overflow-hidden hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/50">
-                  <div className="relative h-56 overflow-hidden bg-gradient-to-br from-primary/10 via-accent/10 to-primary/10">
+                <Card className="flex flex-col group h-full overflow-hidden rounded-2xl border border-border/60 bg-card/80 hover:shadow-[0_18px_45px_rgba(15,23,42,0.08)] dark:hover:shadow-[0_18px_45px_rgba(0,0,0,0.25)] transition-all duration-300 hover:border-primary/40 backdrop-blur-sm">
+                  <div className="relative h-56 overflow-hidden bg-gradient-to-br from-primary/10 via-background/60 to-accent/10">
                     {project.image ? (
                       <Image
                         src={project.image}
@@ -113,7 +113,7 @@ export function Projects() {
 
                   <CardHeader>
                     <div className="flex items-start justify-between">
-                      <h3 className="text-xl font-bold group-hover:text-primary transition-colors line-clamp-2">
+                      <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2">
                         {project.title}
                       </h3>
                       <span className="text-2xl ml-2">
@@ -123,7 +123,7 @@ export function Projects() {
                   </CardHeader>
 
                   <CardContent className="flex-grow flex flex-col">
-                    <p className="flex-grow text-muted-foreground mb-4 text-sm leading-relaxed text-center">
+                    <p className="flex-grow text-muted-foreground mb-4 text-sm leading-relaxed text-center text-foreground/85">
                       {project.description}
                     </p>
 

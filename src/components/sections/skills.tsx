@@ -56,12 +56,12 @@ export function SkillsShowcase() {
   ];
 
   return (
-    <section className="relative flex flex-col items-center justify-center min-h-screen bg-black text-white py-20 px-6">
+    <section className="relative flex flex-col items-center justify-center min-h-screen bg-background text-foreground py-20 px-6">
       <div className="text-center mb-16 z-10">
-        <h2 className="text-5xl md:text-6xl font-extrabold mb-3 tracking-tight">
+        <h2 className="text-5xl md:text-6xl font-extrabold mb-3 tracking-tight gradient-text">
           My Skills
         </h2>
-        <p className="text-gray-400 text-lg font-light">
+        <p className="text-muted-foreground text-lg font-light">
           Skills I have mastered yet
         </p>
       </div>
@@ -89,13 +89,13 @@ function SkillIcon({ skill }: { skill: Skill }) {
     <div className="flex flex-col items-center group">
       <div className="relative">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -right-2 top-1/2 transform -translate-y-1/2 w-16 h-16 bg-gradient-to-r from-white/20 to-transparent rounded-full blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div className="absolute -right-2 top-1/2 transform -translate-y-1/2 w-16 h-16 bg-gradient-to-r from-primary/20 to-transparent rounded-full blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
 
         <div className="relative z-10">
           {imgError ? (
-            <div className="w-16 h-16 flex items-center justify-center bg-gray-800 rounded-full">
-              <span className="text-xs text-white text-center px-1">
+            <div className="w-16 h-16 flex items-center justify-center bg-muted rounded-full">
+              <span className="text-xs text-foreground text-center px-1">
                 {skill.name}
               </span>
             </div>
@@ -113,7 +113,7 @@ function SkillIcon({ skill }: { skill: Skill }) {
         </div>
       </div>
 
-      <span className="mt-2 text-sm text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <span className="mt-2 text-sm text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         {skill.name}
       </span>
     </div>

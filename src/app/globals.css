@@ -298,15 +298,21 @@
 }
 
 .shimmer-text {
-  color: #ffffff !important;
-  background: none !important;
-  -webkit-text-fill-color: #ffffff !important;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--lavender) 45%, var(--teal) 100%);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 4s ease infinite;
 }
 
 .gradient-text {
-  color: #ffffff !important;
-  background: none !important;
-  -webkit-text-fill-color: #ffffff !important;
+  background: linear-gradient(135deg, var(--teal) 0%, var(--lavender) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .gradient-bg {

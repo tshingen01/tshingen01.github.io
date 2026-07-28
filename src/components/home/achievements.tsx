@@ -87,12 +87,12 @@ export function Achievements() {
   return (
     <section
       id="achievements"
-      className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden bg-black text-white py-20"
+      className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden bg-background text-foreground py-20"
     >
       <ShootingStars />
       <StarsBackground />
 
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.7),transparent_85%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.45),transparent_85%)] dark:bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.7),transparent_85%)] pointer-events-none" />
 
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <motion.div
@@ -135,7 +135,7 @@ export function Achievements() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-gray-400 text-lg max-w-2xl mx-auto mt-4 leading-relaxed"
+          className="text-muted-foreground text-lg max-w-2xl mx-auto mt-4 leading-relaxed"
         >
           Some things I&apos;m proud of — from hackathons to community work.
         </motion.p>
@@ -167,7 +167,7 @@ export function Achievements() {
               className="flex"
               style={{ perspective: 1000 }}
             >
-              <Card className="relative group bg-gradient-to-b from-neutral-900/70 to-neutral-800/30 backdrop-blur-xl border border-white/[0.08] shadow-[0_0_25px_rgba(255,255,255,0.05)] rounded-2xl p-6 flex flex-col justify-between w-full h-full hover:border-white/20 transition-all duration-500 min-h-[360px] overflow-hidden">
+              <Card className="relative group bg-card/70 backdrop-blur-xl border border-border/60 shadow-[0_0_25px_rgba(15,23,42,0.04)] dark:shadow-[0_0_25px_rgba(255,255,255,0.05)] rounded-2xl p-6 flex flex-col justify-between w-full h-full hover:border-border/80 transition-all duration-500 min-h-[360px] overflow-hidden">
                 <div
                   className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"
                   style={{
@@ -198,7 +198,7 @@ export function Achievements() {
                     <p className="font-semibold text-lg mb-2">
                       {achievement.title}
                     </p>
-                    <p className="text-sm text-gray-400">
+                    <p className="text-sm text-muted-foreground">
                       {achievement.description}
                     </p>
                   </div>
